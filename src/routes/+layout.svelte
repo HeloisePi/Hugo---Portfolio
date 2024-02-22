@@ -162,4 +162,12 @@
 			flex-grow: 1;
 		}
 	}
+
+
+	.opacityEffect{
+		opacity: 0;
+	}
+	h2{
+		margin-bottom: 116px;
+	}
 </style>
