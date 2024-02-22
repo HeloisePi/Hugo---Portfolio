@@ -43,7 +43,7 @@
 		<p>Gestion du budget de l’association</p>
 		</Experience>
 	</div>
-	<img class="stain stain2"src="/stain/stain2.svg" alt="Tâche">
+	
 	<div class="opacityEffect">
 		<Experience 
 		date="Mai 2023 - Juin 2023"
@@ -55,7 +55,7 @@
 		<p>Relation partenaire de l’événement</p>
 		</Experience>
 	</div>
-	<img class="stain stain1" src="/stain/stain1.svg" alt="stain">
+
 	<div class="opacityEffect">
 		<Experience 
 		date="Juillet 2021 - Août 2021"
@@ -94,67 +94,7 @@
 
 
 <style>
-    .stain{
-        position: absolute;
-        z-index: 0;
-        filter: blur(378.28px);
-    }
-
-    .stain1{
-        left: 0;
-        transform: translate(-50vw, 12vh);
-        animation: RotateStain1 10s linear infinite; 
-        width: 80%;
-
-    }
-
-    .stain2{
-        right: 0;
-        transform: translate(32rem, -52vh);
-        animation: RotateStain2 15s linear infinite; 
-        width: 50%;
-    }
-
-    .stain3{
-        width: 72%;
-        transform: translate(6vw, 1vh);
-        width: 60%;
-    }
-
-
-    @keyframes RotateStain1{
-        0%{
-            transform: translate(-66vw, 3vh);
-        }
-
-        35%{
-            transform: translate(-48vw, 36vh);
-        }
-
-        65%{
-            transform: translate(-35vw, 0vh);
-        }
-
-        100%{
-            transform:translate(-66vw, 3vh);
-        }
-    }
-
-    @keyframes RotateStain2{
-        0%{
-            transform: translate(30vw, -30vh);
-        }
-
-        35%{
-            transform: translate(30vw, 11vh);
-        }
-
-        65%{
-            transform: translate(17vw, -16vh);
-        }
-
-        100%{
-            transform: translate(30vw, -30vh);
-        }
+    .contenaireExperience{
+        z-index: 10000;
     }
 </style>

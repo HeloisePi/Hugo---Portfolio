@@ -119,18 +119,28 @@
 	}
 </script>
 
+<div class="contenaireStain">
+	<img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
+	<img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
+	<img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
+</div>
+
 <Hero></Hero>
 <section>
 
 <About />
 <AllExperience />
+<div class="contenaireStain secondContenaireStain">
+	<img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
+	<img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
+	<img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
+</div>
 </section>
 
 
 <style lang="scss"> 
 	@import '../../src/lib/styles/global.scss';
 	section{
-		transform: translateY(-219vh);
 		padding: 110px;
 		padding-bottom: 0;
 		padding-top: 0 ;
@@ -138,11 +148,90 @@
 		overflow-x: hidden;
 		
 	}
+
+	.contenaireStain{
+		position: absolute;
+		overflow: hidden;
+		width: 100vw;
+		height: fit-content;
+		min-height: 200vh;
+	}
+
+	.secondContenaireStain{
+		z-index: 0;
+		padding: 100vh;
+		transform: translate(-112px, -172vh);
+	}
+
 	.contenaireExperience{
 		overflow-x: hidden;
 	}
 
 
+	//						Stain
 
+	.stain{
+        position: absolute;
+        z-index: 0;
+        filter: blur(378.28px);
+    }
+
+    .stain1{
+        left: 0;
+        transform: translate(-50vw, 12vh);
+        animation: RotateStain1 10s linear infinite; 
+        width: 80%;
+
+    }
+
+    .stain2{
+        right: 0;
+        transform: translate(32rem, -52vh);
+        animation: RotateStain2 15s linear infinite; 
+        width: 50%;
+    }
+
+    .stain3{
+        width: 72%;
+        transform: translate(6vw, 1vh);
+        width: 60%;
+    }
+
+
+    @keyframes RotateStain1{
+        0%{
+            transform: translate(-66vw, 3vh);
+        }
+
+        35%{
+            transform: translate(-48vw, 36vh);
+        }
+
+        65%{
+            transform: translate(-35vw, 0vh);
+        }
+
+        100%{
+            transform:translate(-66vw, 3vh);
+        }
+    }
+
+    @keyframes RotateStain2{
+        0%{
+            transform: translate(30vw, -30vh);
+        }
+
+        35%{
+            transform: translate(30vw, 11vh);
+        }
+
+        65%{
+            transform: translate(17vw, -16vh);
+        }
+
+        100%{
+            transform: translate(30vw, -30vh);
+        }
+    }
 	
 </style>

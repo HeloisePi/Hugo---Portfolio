@@ -19,8 +19,6 @@
 <style lang="scss">
     @import '../styles/global.scss';
     section{
-        
-        margin-top: 100vh;
         width: 100%;
         z-index: 1000;
         height: 100vh;
