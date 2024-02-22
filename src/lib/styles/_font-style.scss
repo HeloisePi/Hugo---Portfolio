@@ -1,0 +1,72 @@
+@import './_variables';
+
+@font-face {
+	font-family: 'Khand-SemiBold';
+	src: url('/fonts/Khand/Khand-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'Khand-Light';
+	src: url('/fonts/Khand/Khand-Light.ttf');
+}
+
+
+@font-face {
+	font-family: 'Supreme-Regular';
+	src: url('/fonts/Supreme/Supreme-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Supreme-Light';
+	src: url('/fonts/Supreme/Supreme-Light.ttf');
+}
+
+
+h1 {
+	color: #DDD7D0;
+	font-size: 96px;
+	font-family: 'Khand-SemiBold';
+}
+
+
+h2{
+	color: #DDD7D0;
+	font-size: 48px;
+	font-family: 'Khand-SemiBold';
+}
+
+h3{
+	color: #DDD7D0;
+	font-size: 28px;
+	font-family: 'Khand-Light';
+}
+
+h4{
+	color: #DDD7D0;
+	font-size: 24px;
+	font-family: 'Supreme-Regular';
+}
+
+p{
+	color: #DDD7D0;
+	font-size: 18px;
+	font-family: 'Supreme-Light';
+}
+
+a{
+	color: $offWhite;
+
+	&:hover{
+		color: $lightViolet;
+		text-decoration: underline;
+	}
+
+	
+
+
+}
+
+a:hover:first-child{
+	color: $lightViolet;
+	text-decoration: underline;
+}
