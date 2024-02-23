@@ -20,6 +20,7 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import About from '$lib/components/About.svelte';
 	import AllExperience from '$lib/components/AllExperience.svelte';
+	import AllPreviewProject from '$lib/components/AllPreviewProject.svelte';
 
 
 	let hasScrolled = false;
@@ -135,6 +136,8 @@
 	<img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
 	<img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
 </div>
+<AllPreviewProject>
+</AllPreviewProject>
 </section>
 
 
@@ -160,7 +163,10 @@
 	.secondContenaireStain{
 		z-index: 0;
 		padding: 100vh;
+		padding-left: 0;
+		padding-right: 0;
 		transform: translate(-112px, -172vh);
+		padding-bottom: 190vh;
 	}
 
 	.contenaireExperience{
@@ -168,7 +174,7 @@
 	}
 
 
-	//						Stain
+	// 						Stain
 
 	.stain{
         position: absolute;
