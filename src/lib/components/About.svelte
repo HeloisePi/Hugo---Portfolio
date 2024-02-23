@@ -75,7 +75,7 @@
         &:hover{
             transform: translate(-3rem, 3rem);
             .contenaireGif{
-                transform: translate(7rem, -5rem);
+                transform: translate(10rem, -7rem);
                     animation: transform cat 5s ease;
                     
                  }

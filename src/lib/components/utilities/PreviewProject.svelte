@@ -45,8 +45,8 @@ a:hover{
 }
 
     .project{
-        width: 479px;
-        height: 305px;
+        height: 100%;
+        width: 100%;
         overflow: hidden;
         border-radius: 20px;
         display: flex;
@@ -78,10 +78,9 @@ a:hover{
     }
     img{
         position: absolute;
-        object-fit: fill;
-        width: fit-content;
-        height: inherit;
+        height: fit-content;
         transition: 1s ease;
+        width: inherit;
     }
 
     .imgHover{
@@ -100,7 +99,7 @@ a:hover{
     }
 
     .mobileLink{
-
+        white-space: nowrap;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -111,11 +110,11 @@ a:hover{
 
     a{
         position: relative;
-        width: fit-content;
-        height: fit-content;
+        width: 479px;
+        height: 305px;
     }
 
-    @media screen and (max-width: 834px) {
+    @media screen and (max-width: 1180px) {
         .link{
             opacity: 0;
         }
@@ -127,7 +126,8 @@ a:hover{
 
 @media screen and (max-width: 616px) {
         a{
-            transform: scale(50%);
+            width: 280px;
+            height: 200px;
         }
 
 }

@@ -44,6 +44,8 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
     }
 
     section{
+        padding: 0;
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,13 +66,15 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
     @media screen and (max-width: 1180px) {
         .contenaireProject{
             grid-template-columns: 1fr;
+            padding: 0px;
             gap: 8rem;
         }
 }
 @media screen and (max-width: 616px) {
          .contenaireProject{
-            gap: 0rem;
+            gap: 5rem;
             column-gap: 0px;
+            
         }
 
 }
