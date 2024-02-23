@@ -21,6 +21,8 @@
 	import About from '$lib/components/About.svelte';
 	import AllExperience from '$lib/components/AllExperience.svelte';
 	import AllPreviewProject from '$lib/components/AllPreviewProject.svelte';
+	import CarouselDrawing from '$lib/components/CarouselDrawing.svelte';
+	import Contact from '$lib/components/Contact.svelte';
 
 
 	let hasScrolled = false;
@@ -138,6 +140,8 @@
 </div>
 <AllPreviewProject>
 </AllPreviewProject>
+<CarouselDrawing />
+<Contact />
 </section>
 
 
