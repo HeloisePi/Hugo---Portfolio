@@ -26,7 +26,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         position: relative;
         overflow-x: hidden;
         width: 100vw;
