@@ -38,6 +38,7 @@ h2, p{
     margin: 0;
     opacity: 0;
     transition: 0.5s ease;
+    text-align: center;
 }
 
 a:hover{
@@ -67,6 +68,7 @@ a:hover{
             }
             h2, p{
                 opacity: 1;
+                
             }
             @media screen and (max-width: 834px) {
                 .link{
