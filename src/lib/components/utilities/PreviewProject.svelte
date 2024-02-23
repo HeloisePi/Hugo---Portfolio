@@ -78,7 +78,7 @@ a:hover{
     }
     img{
         position: absolute;
-        height: fit-content;
+        height: auto;
         transition: 1s ease;
         width: inherit;
     }
