@@ -83,7 +83,13 @@
     }
 
 
-        @media screen and (min-width: 1400px) {
+        @media screen and (max-width: 1400px) {
+            .hugoFace .portrait{
+                    transform: scale(60%);
+            }
+        }
+
+        @media screen and (min-width: 430px) {
             .hugoFace .portrait{
                 max-width: 900px;
                 width: 110%;

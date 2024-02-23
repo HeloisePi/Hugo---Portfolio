@@ -147,6 +147,7 @@
 	<svelte:component this={Cursor} />
 
 	<main class="main"><slot /></main>
+	<Footer/>
 </div>
 
 <style lang="scss">

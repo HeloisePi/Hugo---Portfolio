@@ -22,7 +22,7 @@
 
 <p>
     Je tiens à vous remercier d'avoir pris le temps de parcourir mon portfolio et de découvrir mes réalisations en tant qu'étudiant en fin de deuxième année du BUT Métiers du Multimédia et de l'Internet. <br>
-Enfin, merci à Héloïse PINGITORE, d’avoir réalisé le développement de mes maquettes pour ce portfolio ! N’hésitez pas à aller voir son portfolio juste ici.
+Enfin, merci à <a href="https://heloisepingitore.fr">Héloïse PINGITORE</a>, d’avoir réalisé le développement de mes maquettes pour ce portfolio ! N’hésitez pas à aller voir son portfolio juste <a href="https://heloisepingitore.fr">ici</a>.
 </p>
 
 </section>

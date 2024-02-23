@@ -153,8 +153,16 @@
 		padding-top: 0 ;
 		width: 100vw;
 		overflow-x: hidden;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 148px;
 		
 	}
+	@media screen and (max-width: 900px) {
+        section{
+			padding: 30px;
+		}
+    }
 
 	.contenaireStain{
 		position: absolute;

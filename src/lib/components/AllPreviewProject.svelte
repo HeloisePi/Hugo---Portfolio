@@ -32,12 +32,17 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         srcImg="/project/projet4.png"
         srcImgHover="/project/projet4-hover.png">
         </PreviewProject>
+        <a href="/projets" class="all"><p>Tout découvrir</p></a>
     </div>
 
 </section>
 
 
 <style>
+    .all p{
+        text-decoration: underline;
+    }
+
     section{
         display: flex;
         justify-content: center;

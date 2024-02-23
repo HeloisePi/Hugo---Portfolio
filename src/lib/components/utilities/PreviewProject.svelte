@@ -78,9 +78,9 @@ a:hover{
     }
     img{
         position: absolute;
-        object-fit: fill;
-        width: max-content;
-        height: max-content;
+        object-fit: cover;
+        width: inherit;
+        height: fit-content;
         transition: 1s ease;
     }
 

@@ -3,7 +3,7 @@
 </script>
 
 <h2>EXPÉRIENCES</h2>
-<div class="contenaireExperience" > 
+<section class="contenaireExperience" > 
 
 
     <!-- //////////////////////////////////////////////////////////// -->
@@ -83,18 +83,19 @@
 		date="Juin 2020 - Août 2020"
 		IntitulePost="GESTIONNAIRE ADMINISTRATIF">
 		<p>CERTEUROPE</p>
-		<p>CCréation de certificats électroniques</p>
+		<p>Création de certificats électroniques</p>
 		<p>Gestion des dossiers internes</p>
 		<p>Gestion de la clientèle</p>
 		<p>Ouverture et tri de courrier</p>
 		</Experience>
 	</div>
-</div>
+</section>
 
 
 
 <style>
     .contenaireExperience{
         z-index: 10000;
+		margin-bottom: 148px;
     }
 </style>
