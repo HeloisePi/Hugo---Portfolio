@@ -2,7 +2,7 @@
 	import Experience from "./utilities/Experience.svelte"; 
 </script>
 
-<h2>EXPÉRIENCES</h2>
+<h2 id="experience">EXPÉRIENCES</h2>
 <section class="contenaireExperience" > 
 
 
@@ -95,7 +95,7 @@
 
 <style>
     .contenaireExperience{
-        z-index: 10000;
+        z-index: 10000000;
 		margin-bottom: 148px;
     }
 </style>

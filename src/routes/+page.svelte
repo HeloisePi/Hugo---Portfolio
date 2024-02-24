@@ -166,6 +166,9 @@
         section{
 			padding: 30px;
 		}
+		.relative .secondContenaireStain{
+			transform: translate(-30px, -70vh);
+		}
     }
 
 	.contenaireStain{
