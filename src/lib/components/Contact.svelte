@@ -33,6 +33,7 @@ Enfin, merci à <a href="https://heloisepingitore.fr" target="_blank">Héloïse 
 <style>
     #contact{
         margin-left: 110px;
+
     }
 
     .contactLink{
@@ -49,6 +50,10 @@ Enfin, merci à <a href="https://heloisepingitore.fr" target="_blank">Héloïse 
         }
         #contact{
         margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
 
@@ -56,6 +61,11 @@ Enfin, merci à <a href="https://heloisepingitore.fr" target="_blank">Héloïse 
 
     .thank{
         padding-top: 9rem;
+    }
+
+    a,p 
+    {
+        width: fit-content;
     }
 
     

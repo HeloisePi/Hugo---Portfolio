@@ -127,18 +127,22 @@
 	<img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
 	<img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
 </div>
-
-<Hero></Hero>
 <section>
+<Hero></Hero>
+
 
 <About />
+<div class="relative">
 <AllExperience />
 <div class="contenaireStain secondContenaireStain">
 	<img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
 	<img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
 	<img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
 </div>
+</div>	
+
 <AllPreviewProject>
+
 </AllPreviewProject>
 <CarouselDrawing />
 <Contact />
@@ -170,6 +174,9 @@
 		width: 100vw;
 		height: fit-content;
 		min-height: 200vh;
+		top: 0;
+		left: 0;
+		width: 100vw;
 	}
 
 	.secondContenaireStain{
@@ -177,7 +184,7 @@
 		padding: 100vh;
 		padding-left: 0;
 		padding-right: 0;
-		transform: translate(-112px, -172vh);
+		transform: translate(-110px, -70vh);
 		padding-bottom: 190vh;
 	}
 
@@ -187,6 +194,13 @@
 
 
 	// 						Stain
+
+
+	.relative{
+		position: relative;
+		width: 100%;
+		height: fit-content;
+	}
 
 	.stain{
         position: absolute;

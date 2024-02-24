@@ -1,6 +1,6 @@
 <script></script>
 
-<section>
+<section id="hero">
 
     <h1>
         PORTFOLIO
@@ -16,7 +16,7 @@
     </div>
 </section>
 <style>
-    section{
+    #hero{
         /* position: absolute; */
         /* top: 0; */
         padding-top: 20vh;
@@ -28,13 +28,40 @@
         flex-direction: column;
         gap: 1rem;
         position: relative;
-        overflow-x: hidden;
-        width: 100vw;
-        /* padding-bottom: 71rem;  */
+        width: 100%;
+        overflow: hidden;
     }
 
+    @media screen and (max-height: 1000px) {
+                #hero h1{
+                    font-size: 48px;
+                }
+                h2{
+                    font-size: 28px;
+                }
+                #hero .scroll{
+                    width: 51px;
+                    margin-top: 0px;
+                    
+                }
+                #hero .arrow{
+                    width: 10px;
+                    height: auto;
+                }
+
+            }
+            @media screen and (max-height: 500px) {
+                #hero{
+                    gap: 0;
+                }
+                h2{
+                    margin-bottom: 40px;
+                }
+            }
+
+
     .scroll{
-        margin-top: 168px;
+        margin-top: 5vh;
         position: relative;
         width: 116px;
         height: 114px;
@@ -50,6 +77,7 @@
     }
 
     .arrow{
+
         left: 50%;
         transform: translate(-50%, 100%);
         animation: upDown linear infinite  5s;
