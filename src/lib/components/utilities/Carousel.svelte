@@ -3,15 +3,25 @@
     let index = 0;
   
     function updateAccessory() {
-      carouselImage.style.transform = `translateX(${-100 * index}%)`;
-      console.log(index, "index")
-    }
+        const leftPosition = -100 * index;
+        console.log("leftPostition", leftPosition)
+        carouselImage.style.left = `${leftPosition}%`;
+        console.log('carouselImage', carouselImage.style);
+    // Retirez la classe "center" des éléments précédemment sélectionnés
+    const centerImgContainers = document.querySelectorAll('.contenaireImg');
+    centerImgContainers.forEach(container => {
+        container.style.transform = 'scale(100%)';
+        container.style.zIndex = '1';
+        
+    });
+    // Ajoutez la classe "center" au conteneur de l'image centrale
+    const centerImgContainer = carouselImage.children[index];
+    centerImgContainer.style.transform = 'scale(135%)';
+    centerImgContainer.style.zIndex = '90';
+    //console.log('centerImgContainer', centerImgContainer.classList);
+}
   
     function previous() {
-      const previousButton = document.querySelector('.previous-button ');
-      const nextButton = document.querySelector('.nextButton');
-  
-      nextButton.classList.remove('inactive');
       if (index > -1) {
         index -= 1;
       }
@@ -23,11 +33,6 @@
     }
   
     function next() {
-      const previousButton = document.querySelector('.previous-button');
-      const nextButton = document.querySelector('.nextButton');
-  
-      previousButton.classList.remove('inactive');
-  
       if (index < 5) {
         index += 1;
       }
@@ -59,23 +64,157 @@
         </div>
      
     </div>
-  
+    <div class="contenaireButton">
     <img class="previous-button button" src="/back.svg" alt="Preview" on:click={previous}>
     <img class="nextButton button" src="/next.svg" alt="Preview" on:click={next}>
+</div>
   </div>
   
-  <style>
+  <style lang="scss">
+    .contenaireButton .previous-button{
+        transform: translate(-20vw, 0vw);
+    }
+
+    .contenaireButton .nextButton{
+        transform: translate(20vw, 0vw);
+    }
+
+.carousel .center {
+        transform: scale(110%) !important;
+        z-index: 30;
+        background-color: lightblue; /* Ajout d'une couleur de fond pour s'assurer qu'il est visible */
+    }
 
     .carousel{
-        overflow: hidden;
+        width: fit-content;
+        position: relative;
         width: 600px;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
     .carouselImage {
-
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         transition: 0.25s ease-in;
-      width: 600px;
-      height: 703px;
+        width: 600px;
+        height: 1000px;
+        position: absolute;
+        left: 0%;
+        top: 50%;
+        transform: translate(0%, -50%);
+        transition: 0.25s ease-in-out;
     }
+
+    @media screen and (max-width: 2000px) {
+        .carousel{
+            width: 500px;
+            height: 800px;
+        }
+        .carouselImage {
+            width: 500px;
+            
+            .contenaireImg{
+                width: 500px;
+                height: 500px;
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 1700px) {
+        .carousel{
+            width: 400px;
+            height: 900px;
+        }
+        .carouselImage {
+            width: 400px;
+            
+            .contenaireImg{
+                width: 400px;
+                height: 400px;
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        .carousel{
+            width: 300px;
+            height: 800px;
+        }
+        .carouselImage {
+            width: 300px;
+            
+            .contenaireImg{
+                width: 300px;
+                height: 300px;
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        .carousel{
+            width: 200px;
+            height: 800px;
+        }
+        .carouselImage {
+            width: 200px;
+            
+            .contenaireImg{
+                width: 200px;
+                height: 200px;
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .carousel{
+            width: 300px;
+            height: 700px;
+        }
+        .carouselImage {
+            width: 300px;
+            
+            
+            .contenaireImg{
+                width: 300px;
+                height: 300px;
+
+            }
+
+        }
+    }
+        @media screen and (max-width: 475px) {
+            .carousel{
+            width: 200px;
+            height: 600px;
+        }
+        .carouselImage {
+            width: 200px;
+            
+            
+            .contenaireImg{
+                width: 200px;
+                height: 200px;
+
+            }
+        }
+    }
+
+    
+  
   
     img {
         width: 100%; /* Pour remplir entièrement le conteneur */
@@ -88,33 +227,42 @@
         overflow: hidden;
         position: absolute;
         border-radius: 20px;
-        transition: 1s ease-in;
+        transition: 0.25s ease-in;
     }
 
     .button{
         width: 50px;
         height: 50px;
+        z-index: 1000000;
+        transform: translate(10px, 10px);
+    }
+
+    .contenaireButton{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
     }
   
     .carouselImage > *:nth-child(1) {
-    transform: translateX(0);
+    left : 0;
   }
   .carouselImage > *:nth-child(2) {
-    transform: translateX( 100%);
+    left :  100%;
   }
   .carouselImage > *:nth-child(3) {
-    transform: translateX( 200%);
+    left :  200%;
   }
   .carouselImage > *:nth-child(4) {
-    transform: translateX( 300%);
+    left :  300%;
   }
 
   .carouselImage > *:nth-child(5) {
-    transform: translateX( 400%);
+    left :  400%;
   }
 
   .carouselImage > *:nth-child(6) {
-    transform: translateX( 500%);
+    left :  500%;
   }
   </style>
   

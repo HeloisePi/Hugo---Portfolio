@@ -40,12 +40,12 @@
                     font-size: 28px;
                 }
                 #hero .scroll{
-                    width: 51px;
+                    width: 70px;
                     margin-top: 0px;
                     
                 }
                 #hero .arrow{
-                    width: 10px;
+                    width: 15px;
                     height: auto;
                 }
 
