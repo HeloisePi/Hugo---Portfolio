@@ -1,7 +1,4 @@
-<script>
-	import CarouselPageDessin from "$lib/components/utilities/CarouselPageDessin.svelte";
 
-</script>
 
     <div class="contenaireStain">
         <img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
@@ -9,41 +6,34 @@
         <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
     </div>
     <section>
-    <h1>DESSINS</h1>
+    <h1>Mentions légales</h1>
 </section>
 <main>
-<CarouselPageDessin 
-title="Portrait">
-    <img src="/dessin/femme_blonde.jpg" alt="femme_blonde">
-    <img src="/dessin/femme_profil.jpg" alt="femme_profil">
-    <img src="/dessin/femme_face.jpg" alt="femme face">
-</CarouselPageDessin>
+    <p>Adresse e-mail : hugo.mensah@mmibordeaux.com <br>
+        Numéro de téléphone : +33 7 78 56 44 68 <br>
+        Hébergement : Netlify <br>
+        Adresse : Bordeaux</p>
 
-<CarouselPageDessin 
-title="Personnage">
-    <img src="/dessin/Nebula.jpg" alt="Nebula">
-    <img src="/dessin/Wednesday.jpg" alt="Wednesday">
-    <img src="/dessin/Max.jpg" alt="Max">
-    <img src="/dessin/Scarlet_Witch.jpg" alt="Scarlet_Witch">
-    <img src="/dessin/Wanda.jpg" alt="Wanda">
-</CarouselPageDessin>
-
-
-<CarouselPageDessin 
-title="Abstrait">
-    <img src="/dessin/femme_poignardee.jpg" alt="femme_poignardee">
-    <img src="/dessin/oeil_ombre.jpg" alt="oeil_ombre">
-    <img src="/dessin/homme_ombre.jpg" alt="homme_ombre">
-    <img src="/dessin/personne_depresed.jpg" alt="personne_depresed">
-    <img src="/dessin/homme_seul.jpg" alt="homme_seul">
-</CarouselPageDessin>
-
-<CarouselPageDessin 
-title="Divers">
-    <img src="/dessin/arbre.jpg" alt="arbre">
-    <img src="/dessin/super_heros.jpg" alt="super_heros">
-
-</CarouselPageDessin>
+    <h3>Propriété intelectuelle</h3>
+    <p>Tous les éléments présents sur le site (photographie, logo, illustration, dessin) sont protégés par la loi en vigueur au titre de la propriété intellectuelle.<br>
+        En effet toute reproduction ou utilisation est strictement interdite sans accord au préalable de l'éditeur.<br>
+        La reproduction et la copie des contenus par l'utilisateur requièrent une autorisation préalable du site. Dans ce cas, toute utilisation à des usages commerciaux ou à des fins publicitaires est proscrite.</p>
+        <h3>
+            Champ d’application / contenu utilisateur
+        </h3>
+        <p>
+            Description des services : Ce site propose un service non-marchand. <br>
+            Le service proposé pour les utilisateurs est de participer à une histoire interactive. <br>
+            Le site est accessible gratuitement depuis n’importe où par tout utilisateur disposant d’un accès à Internet.<br>
+            Tous les frais nécessaires pour l’accès aux services (matériel informatique, connexion Internet…) sont à la charge de l’utilisateur.<br>
+            Pour des raisons de maintenance ou autres, l’accès au site peut être interrompu ou suspendu par l’éditeur sans préavis ni justification.<br>
+        </p>
+        <h3>
+            Responsabilité
+        </h3>
+        <p>Les informations diffusées sur ce portfolio sont présentées à titre purement informatif et sont sans valeur contractuelle. En dépit des mises à jour, la responsabilité du site ne peut être engagée en cas de modification des dispositions administratives et juridiques apparaissant après la publication.<br>
+            Le site décline toute responsabilité concernant les éventuels virus pouvant infecter le matériel informatique de l'utilisateur après l’utilisation ou l’accès à ce site. <br>
+            Le site ne peut être tenu pour responsable en cas de force majeure ou du fait imprévisible et insurmontable d’un tiers.</p>
 </main>
 
 
@@ -143,9 +133,9 @@ section{
     }
 
     main{
-		padding: 0px;
+		padding: 110px;
 		padding-bottom: 0;
-        gap: 234px;
+        gap: 21px;
 		padding-top: 0 ;
 		width: 100vw;
 		overflow-x: hidden;
