@@ -9,9 +9,13 @@
 	<div class="contenaireCarousel">
 		<Carousel></Carousel>
 	</div>
-
+	<a href="/dessin"><p class="seeemore">Tout découvrir</p></a>
 </section>
+
 <style lang="scss">
+	.seeemore{
+		text-decoration: underline;
+	}
 	h2{
 		margin: 0;
 	}
@@ -20,6 +24,7 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		flex-direction: column;
 	}
 	.contenaireCarousel{
 		width: 1800px;
