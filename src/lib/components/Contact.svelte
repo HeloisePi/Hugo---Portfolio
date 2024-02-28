@@ -37,7 +37,7 @@ Enfin, merci à <a href="https://heloisepingitore.fr" target="_blank">Héloïse 
     }
 
     .contactLink{
-        margin-bottom: 65px;
+        padding-bottom: 65px;
         display: flex;
         align-items: center;
         gap: 117px;

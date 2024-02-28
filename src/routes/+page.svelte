@@ -144,7 +144,15 @@
 <AllPreviewProject>
 
 </AllPreviewProject>
+
+<div class="relative">
+<div class="secondContenaireStain contenaireStain">
+	<img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
+	<img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
+	<img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
+</div>
 <CarouselDrawing />
+</div>
 <Contact />
 </section>
 
@@ -153,18 +161,18 @@
 	@import '../../src/lib/styles/global.scss';
 	section{
 		padding: 110px;
-		padding-bottom: 0;
 		padding-top: 0 ;
 		width: 100vw;
 		overflow-x: hidden;
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 148px;
+		padding-bottom: 148px;
 		
 	}
 	@media screen and (max-width: 900px) {
         section{
 			padding: 30px;
+			padding-bottom: 148px;
 		}
 		.relative .secondContenaireStain{
 			transform: translate(-30px, -70vh);
