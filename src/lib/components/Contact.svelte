@@ -33,6 +33,7 @@ Enfin, merci à <a href="https://heloisepingitore.fr" target="_blank">Héloïse 
 <style>
     #contact{
         margin-left: 110px;
+        z-index: 1000;
 
     }
 

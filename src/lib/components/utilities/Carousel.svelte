@@ -129,6 +129,9 @@
                 height: 500px;
             }
         }
+       .carousel .points{
+            bottom: 14%;
+        }
     }
 
     @media screen and (max-width: 1700px) {
@@ -142,6 +145,9 @@
                 width: 400px;
                 height: 400px;
             }
+        }
+       .points{
+            bottom: 17%;
         }
     }
 
@@ -171,6 +177,9 @@
                 height: 200px;
             }
         }
+        .carousel .points{
+            bottom: 27%;
+        }
     }
 
     @media screen and (max-width: 650px) {
@@ -184,6 +193,10 @@
                 width: 300px;
                 height: 300px;
             }
+        }
+
+        .carousel .points{
+            bottom: 13%;
         }
     }
 
@@ -260,7 +273,7 @@
         justify-content: center;
         margin-top: 10px;
         position: absolute;
-        bottom: 10%;
+        bottom: 2%;
     }
 
     .point {
@@ -274,7 +287,7 @@
 
     .point.active {
         background-color: $lightViolet;
-        transform: scale(1);
+        transform: scale(1.3);
     }
 
     .point:hover{

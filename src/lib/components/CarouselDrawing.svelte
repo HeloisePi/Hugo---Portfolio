@@ -46,24 +46,42 @@
         .contenaireCarousel{
 			width: 1200px;
 		}
+		// section a{
+		// 	left: 23vw;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// }
     }
 
     @media screen and (max-width: 1400px) {
         .contenaireCarousel{
 			width: 900px;
 		}
+		// section a{
+		// 	left: 23vw;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// }
+
     }
 
     @media screen and (max-width: 1100px) {
         .contenaireCarousel{
 			width: 600px;
 		}
+		// section a{
+		// 	left: 27vw;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// }
     }
+
 
     @media screen and (max-width: 650px) {
         .contenaireCarousel{
 			width: 400px;
 		}
+		
     }
 
 	@media screen and (max-width: 475px) {

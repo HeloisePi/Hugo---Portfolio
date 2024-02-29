@@ -2,10 +2,11 @@
     export let srcImg;
     export let srcImgHover;
     export let title;
+    export let src;
     export let description;
 </script>
 
-<a href="#">
+<a href="{src}">
     <div class="project">
         <h2>
             {title}
