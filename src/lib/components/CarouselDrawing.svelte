@@ -13,6 +13,10 @@
 </section>
 
 <style lang="scss">
+
+	a{
+		z-index: 100000;
+	}
 	.seeemore{
 		text-decoration: underline;
 	}

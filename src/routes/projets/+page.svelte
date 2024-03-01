@@ -1,69 +1,72 @@
 <script>
+
+    import Projects from '$lib/components/utilities/Projects.svelte'; 
     import { writable, get } from 'svelte/store';
-
     import { onMount } from 'svelte';
-	import Projects from '$lib/components/utilities/Projects.svelte';
 
-    // Liste des tags uniques disponibles
     let tags = [];
-
-    // Variable réactive pour stocker les tags sélectionnés par l'utilisateur
     const selectedTags = writable([]);
 
-    // Souscription à la variable selectedTags pour déclencher la fonction de filtrage lorsqu'elle est mise à jour
     selectedTags.subscribe(value => {
         filterProjects(value);
     });
 
     function isChecked(tag) {
-    const selectedTagsArray = get(selectedTags); // Obtenez la valeur actuelle des tags sélectionnés
-    return selectedTagsArray.includes(tag);
-}
+        const selectedTagsArray = get(selectedTags); 
+        return selectedTagsArray.includes(tag);
+    }
 
-    // Fonction pour extraire les tags du HTML
     function extractTagsFromHTML() {
         let extractedTags = [];
-        // Sélectionnez les balises div contenant des informations sur les projets
         let projectDivs = document.querySelectorAll('.contenaire');
-        // Parcourez chaque balise div
         projectDivs.forEach(div => {
-            // Récupérez les tags de cette balise div
             let projectTags = div.querySelectorAll('.tag p');
-            // Ajoutez les tags à la liste des tags extraits
             projectTags.forEach(tag => {
                 extractedTags.push(tag.textContent.trim());
             });
         });
-        // Retournez les tags extraits uniques
         return Array.from(new Set(extractedTags));
     }
 
     function filterProjects(selectedTags) {
-    // Si aucun tag n'est sélectionné, afficher tous les conteneurs
-    if (selectedTags.length === 0) {
-        document.querySelectorAll('.contenaire').forEach(container => {
-            container.style.display = 'block';
+        if (selectedTags.length === 0) {
+            document.querySelectorAll('.contenaire').forEach(container => {
+                container.style.display = 'block';
+            });
+            return;
+        }
+        let projectContainers = document.querySelectorAll('.contenaire');
+        projectContainers.forEach(container => {
+            let tagsInContainer = Array.from(container.querySelectorAll('.tag p')).map(tag => tag.textContent.trim());
+            let showContainer = selectedTags.some(tag => tagsInContainer.includes(tag));
+            container.style.display = showContainer ? 'block' : 'none';
         });
-        return;
     }
 
-    // Sélectionnez tous les conteneurs de projet
-    let projectContainers = document.querySelectorAll('.contenaire');
-    // Parcourez chaque conteneur
-    projectContainers.forEach(container => {
-        // Vérifiez si le conteneur possède au moins un des tags sélectionnés
-        let tagsInContainer = Array.from(container.querySelectorAll('.tag p')).map(tag => tag.textContent.trim());
-        let showContainer = selectedTags.some(tag => tagsInContainer.includes(tag));
-        // Affichez ou masquez le conteneur en fonction du résultat
-        container.style.display = showContainer ? 'block' : 'none';
-    });
-}
-
-    // Utilisez writable pour créer une variable réactive pour chaque tag
-    const tagStates = {};
-
     function handleTagSelection(tag, event) {
-    const checked = event.target.checked; // Accédez directement à la propriété checked
+    const checked = event.target.checked; 
+    const label = event.target.parentNode; // Récupérer le parent (le label)
+    const img = label.querySelector('img');
+    
+    // Appliquer les styles directement au label en fonction de l'état checked
+    if (checked) {
+        img.style.opacity = "1";
+        label.style.backgroundColor = '#9C528B';
+        label.style.display = 'flex';
+        label.style.justifyContent = 'flex-start';
+        label.style.alignItems = 'center';
+        label.style.flexDirection = 'row';
+        label.style.borderRadius = '10px';
+        label.style.width = 'fit-content';
+        label.style.height = 'auto';
+        label.style.padding = '4px';
+    } else {
+        // Remettre les styles par défaut si la case est décochée
+        img.style.opacity = "0";
+        label.style.backgroundColor = '';
+    }
+    
+    // Mettre à jour les tags sélectionnés dans le store
     if (checked) {
         selectedTags.update(tags => [...tags, tag]);
     } else {
@@ -72,92 +75,109 @@
 }
 
     onMount(() => {
-        // Exécute la fonction d'extraction des tags une fois que le composant est monté
         tags = extractTagsFromHTML();
-        // Crée une variable réactive pour chaque tag
-        tags.forEach(tag => {
-            tagStates[tag] = writable(false);
-        });
     });
 </script>
 
 <h1>Projects</h1>
 
-<!-- Interface utilisateur pour les filtres -->
 <div class="filters">
     {#each tags as tag}
-        <label>
-            <!-- Utilisation de la variable réactive correspondant à chaque tag -->
+        <label class="tag-label">
             <input type="checkbox" on:change={(event) => handleTagSelection(tag, event)} checked={isChecked(tag)} value={tag}>
-
-            {tag}
+            <img src="/icon/check.svg" alt="check">
+            <div class="tag">
+                <div class="color" style="background-color: {tag === 'AUDIOVISUEL' ? '#0A12C2' : (tag === 'DESIGN' ? '#C20ABA' : (tag === 'ÉCRITURE' ? '#C20A0A' : (tag === 'DÉVELOPPEMENT' ? '#C25A0A' : '')))}"></div>
+                <p style="color: {tag === 'AUDIOVISUEL' ? '#0A12C2' : (tag === 'DESIGN' ? '#C20ABA' : (tag === 'ÉCRITURE' ? '#C20A0A' : (tag === 'DÉVELOPPEMENT' ? '#C25A0A' : '')))}">{tag}</p>
+            </div>
         </label>
     {/each}
 </div>
-<main>
-        <Projects
-        title1="Conviviel"
-        title2= "Flop!Edt"
-        link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
-        linkTitle= "Lien Figma"
-        description= "Au cours d'un projet de deux semaines sur l'UX/UI design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
-        tag1= "AUDIOVISUEL"
-        tag1Color= "#0A12C2"
-        tag2="DESIGN"
-        tag2Color= "#C20ABA"
-        >
-        <img src="/portrait.png" alt="test">
-        </Projects>
-        <Projects
-        title1="Conviviel"
-        title2= "Flop!Edt"
-        link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
-        linkTitle= "Lien Figma"
-        description= "Au cours d'un projet de deux semaines sur l'UX/UI design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
-        tag1= "AUDIOVISUEL"
-        tag1Color= "#0A12C2"
-        tag2="DESIGN"
-        tag2Color= "#C20ABA"
-        >
-        <img src="/portrait.png" alt="test">
-        </Projects>
-        <Projects
-        title1="Conviviel"
-        title2= "Flop!Edt"
-        link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
-        linkTitle= "Lien Figma"
-        description= "Au cours d'un projet de deux semaines sur l'UX/UI design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
-        tag1= "ÉCRITURE"
-        tag1Color= "#C20A0A"
 
-        >
-        <img src="/portrait.png" alt="test">
-        </Projects>
+
+<main>
+
+    <Projects
+    title1="Conviviel"
+    title2= "Flop!Edt"
+    link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
+    linkTitle= "Lien Figma"
+    description= "Au cours d'un projet de deux semaines sur l'UX/UI design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
+    tag1= "AUDIOVISUEL"
+    tag1Color= "#0A12C2"
+    tag2="DESIGN"
+    tag2Color= "#C20ABA"
+    >
+    <img src="/portrait.png" alt="test">
+    </Projects>
+    <Projects
+    title1="Conviviel"
+    title2= "Flop!Edt"
+    link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
+    linkTitle= "Lien Figma"
+    description= "Au cours d'un projet de deux semaines sur l'UX/UI design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
+    tag1= "AUDIOVISUEL"
+    tag1Color= "#0A12C2"
+    tag2="DESIGN"
+    tag2Color= "#C20ABA"
+    >
+    <img src="/portrait.png" alt="test">
+    </Projects>
+    <Projects
+    title1="Conviviel"
+    title2= "Flop!Edt"
+    link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
+    linkTitle= "Lien Figma"
+    description= "Au cours d'un projet de deux semaines sur l'UX/UI design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
+    tag1= "ÉCRITURE"
+    tag1Color= "#C20A0A"
+
+    >
+    <img src="/portrait.png" alt="test">
+    </Projects>
 </main>
 
 
 <style lang="scss">
 
-label{
-    color: white;
+    label {
+
+        display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    width: fit-content;
+    height: auto;
+    padding: 4px;
+        img{
+        opacity: 0;
+        width: 32px;
+        height: 32px;
+
+    }
+    }
+    
+
+
+.tag {
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 30px;
 }
 
-input{
-    border-color: white;
-    border-color: white;
-    height: 50px;
-    width: 50px;
-    background-color: white;
+.tag .color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* Utilisez une couleur spécifique au lieu de var(--tag1Color) car --tag1Color n'est pas défini dans le CSS que vous avez fourni */
+    background-color: #000; /* Par exemple */
+    margin-right: 0.5rem;
 }
-
-
-
-
-
-
-
-
-
 
 // ----------------------------------------------------------------
     .stain{
@@ -256,7 +276,7 @@ section{
 
     main{
 		padding: 110px;
-        gap: 21px;
+        gap: 124px;
 		padding-top: 5rem ;
         padding-bottom: 5rem;
 		width: 100vw;
