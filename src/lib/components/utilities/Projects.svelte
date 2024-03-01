@@ -14,61 +14,182 @@
     export let tag4Color;
 </script>
 
-<div class="contenaire">
-<div class="top">
-<h2>{title1}</h2>
-{#if tag1}
-<div class="tag">
-    <div class="color" style="background-color:{tag1Color}">
+<div class="contenaire" id="{title1}">
+    <div class="top">
+        <h2>{title1}</h2>
+        <div class="tags">
+            {#if tag1}
+            <div class="tag">
+                <div class="color" style="background-color:{tag1Color}">
+                </div>
+                <p  style="color:{tag1Color}">{tag1}</p>
+            </div>
+            {/if}
+            {#if tag2}
+            <div class="tag">
+                <div class="color color2" style="background-color:{tag2Color}">
+                </div>
+                <p style="color:{tag2Color}"> {tag2}</p>
+            </div>
+            {/if}
+            {#if tag3}
+            <div class="tag">
+                <div class="color color3" style="background-color:{tag3Color}">
+                </div>
+                <p style="color:{tag3Color}" >{tag3}</p>
+            </div>
+            {/if}
+            {#if tag4}
+            <div class="tag">
+                <div class="color color4" style="background-color:{tag4Color}">
+                </div>
+                <p style="color:{tag4Color}"> {tag4}</p>
+            </div>
+            {/if}
+        </div>
     </div>
-    <p>{tag1}</p>
-</div>
-{/if}
-{#if tag2}
-<div class="tag">
-    <div class="color" style="background-color:{tag2Color}">
+    <div class="contenaireProject">
+        <div class="visuelElement">
+            <slot></slot>
+        </div>
+        <div class="titleDescription">
+            <h3>{title2}</h3>
+            <p>{description}</p>
+        </div>
     </div>
-    <p>{tag2}</p>
+    <a href="{link}"><p>{linkTitle}</p></a>
+    <div class="cadre cadre1"></div>
+    <div class="cadre cadre2"></div>
 </div>
-{/if}
-{#if tag3}
-<div class="tag">
-    <div class="color" style="background-color:{tag3Color}">
-    </div>
-    <p>{tag3}</p>
-</div>
-{/if}
-{#if tag4}
-<div class="tag">
-    <div class="color" style="background-color:{tag4Color}">
-    </div>
-    <p>{tag4}</p>
-</div>
-{/if}
-</div>
-<div class="contenaireProject">
-    <div class="visuelElement">
-        <slot></slot>
-    </div>
-    <div class="titleDescription">
-        <h3>{title2}</h3>
-        <p>{description}</p>
-    </div>
-</div>
-<a href="{link}"><p>{linkTitle}</p></a>
-</div>
-<div class="cadre"></div>
 
 
 <style lang="scss">
+    @import '../../styles/global.scss';
+
+    @media screen and (max-width: 1410px) {
+        .contenaire .contenaireProject{
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: 1fr;
+            h3{
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                
+            }
+
+            .cadre1{
+                transform: translate(-93px, -4px);
+            }
+            
+            
+        }
+        .contenaire .cadre{
+                width: 125%;
+            }
+    }
+
+    @media screen and (max-width: 900px) {
+        .contenaire{
+            h2{
+                transform: translate(-13%, -4px);
+            }
+
+            .cadre1{
+                transform: translate(-11%, -4px);
+            }
+
+            .cadre2{
+                transform: translate(-8%, 3.5rem);
+            }
+
+            a{
+                transform: translateY(-2rem);
+            }
+
+            .tag{
+                background-color: #1e092200;
+                padding: 0;
+                
+                p{
+                    display: none;
+                }
+                .color{
+                    margin: 0;
+                    
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .contenaire{
+            a{
+                transform: translateY(-3rem);
+            }
+        }
+    }
+        .cadre{
+            background-color: $lightViolet;
+            opacity: 0.1;
+            position: absolute;
+            width: 115%;
+            height: 93%;
+            top: 0;
+            left: 0;
+            border: 4px solid white;
+            border-radius: 20px;
+            z-index: 0;
+        }
+
+        .cadre1{
+            transform: translate(-139px, -4px);
+        }
+
+        .cadre2{
+            transform: translate(-4rem, 4rem);
+        }
+
+        .contenaire{
+            position: relative;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 90px;
+        }
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tags{
+            display: flex;
+            gap: 20px;
+        }
+
+        h2{
+            margin: 0;
+        }
+
+        h3{
+            margin-bottom: 54px;
+            //margin-top: 110px;
+        }
+        .contenaireProject{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
        .tag{
-        background-color: #E8E8E8;
-        border-radius: 15px;
-        padding: 0.5rem;
-        display: flex;
-        align-items: center;
-        width: fit-content;
-        height: 30px;
+            background-color: #E8E8E8;
+            border-radius: 10px;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            height: 30px;
 
         .color{
             width: 15px;
@@ -78,15 +199,15 @@
             margin-right: 0.5rem;
         }
         .color2{
-
+            background-color: var(--tag2Color);
         }
 
         .color3{
-
+            background-color: var(--tag3Color);
         }
 
         .color4{
-
+            background-color: var(--tag4Color);
         }
     }
 
