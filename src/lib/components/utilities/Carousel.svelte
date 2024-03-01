@@ -1,4 +1,5 @@
 <script>
+    import { onMount } from "svelte";
     let carouselImage;
     let index = 0;
     const totalItems = 5; // Nombre total d'éléments dans le carousel
@@ -45,6 +46,12 @@
         index = i;
         updateAccessory();
     }
+
+    onMount(() => {
+    // Appel de la fonction updateAccessory pour mettre à jour la première image dès le début
+    updateAccessory();
+});
+
 </script>
 
 <div class="carousel">
