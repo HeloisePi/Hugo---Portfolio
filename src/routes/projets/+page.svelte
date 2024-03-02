@@ -33,7 +33,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     function filterProjects(selectedTags) {
         if (selectedTags.length === 0) {
             document.querySelectorAll('.contenaire').forEach(container => {
-                container.style.display = 'block';
+                container.style.display = 'flex';
             });
             return;
         }
@@ -41,7 +41,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
         projectContainers.forEach(container => {
             let tagsInContainer = Array.from(container.querySelectorAll('.tag p')).map(tag => tag.textContent.trim());
             let showContainer = selectedTags.some(tag => tagsInContainer.includes(tag));
-            container.style.display = showContainer ? 'block' : 'none';
+            container.style.display = showContainer ? 'flex' : 'none';
         });
     }
 
