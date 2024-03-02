@@ -478,6 +478,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
             flex-direction: column;
             gap: 20px;
             width: fit-content;
+            
         }
         .contenairefilters .filters{
             width: fit-content;
@@ -496,13 +497,20 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     }
 
     @media screen and (max-width: 450px) {
-        .contenairefilters .filters{
+         .contenairefilters .filters{
             padding-top: 49px;
             padding-left: 0px;
+            
 
         
             h3 {
-                top: 15px
+                top: 15px;
+                left: 15px ;
+            }
+
+            .filter{
+                left: 15px ;
+                margin-top: 10px;
             }
         }
 
