@@ -147,7 +147,8 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag2="DESIGN"
     tag2Color= "#C20ABA"
     >
-    <MiniCarousel>
+    <MiniCarousel
+    taille="6">
             <img class="carouselImage one" src="/project/PageProject/convivial/1.jpg" alt="">
             <img class="carouselImage two" src="/project/PageProject/convivial/2.jpg" alt="">
             <img class="carouselImage thee" src="/project/PageProject/convivial/3.jpg" alt="">
@@ -183,7 +184,8 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag2="DESIGN"
     tag2Color= "#C20ABA"
     >
-    <MiniCarousel>
+    <MiniCarousel
+    taille="6">
         <img class="carouselImage one" src="project/PageProject/bd/1.jpg" alt="">
         <img class="carouselImage two" src="/project/PageProject/bd/2.png" alt="">
         <img class="carouselImage thee" src="/project/PageProject/bd/3.png" alt="">
@@ -220,7 +222,8 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag2="DESIGN"
     tag2Color= "#C20ABA"
     >
-    <MiniCarousel>
+    <MiniCarousel
+    taille="6">
         <img class="carouselImage one" src="project/PageProject/WORKSHOP/1.jpg" alt="">
         <img class="carouselImage two" src="/project/PageProject/WORKSHOP/2.jpg" alt="">
         <img class="carouselImage thee" src="/project/PageProject/WORKSHOP/3.jpg" alt="">
@@ -258,7 +261,8 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag2Color= "#C25A0A"
     
     >
-    <MiniCarousel>
+    <MiniCarousel
+    taille="3">
         <img class="carouselImage one" src="project/PageProject/ruby/1.jpg" alt="">
         <img class="carouselImage two" src="/project/PageProject/ruby/2.jpg" alt="">
         <img class="carouselImage thee" src="/project/PageProject/ruby/3.jpg" alt="">
@@ -315,7 +319,8 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag1= "ÉCRITURE"
     tag1Color= "#C20A0A" 
     >
-    <MiniCarousel>
+    <MiniCarousel
+    taille="4">
         <img class="carouselImage one" src="project/PageProject/bacchanight/1.jpg" alt="">
         <img class="carouselImage two" src="/project/PageProject/bacchanight/2.jpg" alt="">
         <img class="carouselImage thee" src="/project/PageProject/bacchanight/3.jpg" alt="">
@@ -336,7 +341,8 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag1= "DESIGN"
     tag1Color= "#C20ABA" 
     >
-    <MiniCarousel>
+    <MiniCarousel
+    taille="2">
         <img class="carouselImage one" src="project/PageProject/infographie/1.jpg" alt="">
         <img class="carouselImage two" src="/project/PageProject/infographie/2.jpg" alt="">
        

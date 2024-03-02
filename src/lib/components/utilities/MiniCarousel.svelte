@@ -1,4 +1,5 @@
 <script>
+    export let taille;
     let carouselImage;
     let index = 0;
   
@@ -27,7 +28,7 @@
   
         previousButton.classList.remove('inactive');
   
-        if (index < 4) {
+        if (index < taille-1) {
             index += 1;
         } else {
             index = 0;

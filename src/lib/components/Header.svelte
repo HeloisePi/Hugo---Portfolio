@@ -6,7 +6,7 @@
       <a href="/projets"><h3>Projets</h3></a>
       <a href="/dessin"><h3>Dessins</h3></a>
       <a href="/#contact"><h3>Contacts</h3></a>
-      <a href="/#home"><h3>CV</h3></a>
+      <a target="blank" href="/CV-MENSAH-Hugo.pdf"><h3>CV</h3></a>
     </div>
 </header>
 
