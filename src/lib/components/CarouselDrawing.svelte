@@ -15,10 +15,11 @@
 <style lang="scss">
 
 	a{
-		z-index: 100000;
+		z-index: 0;
 	}
 	.seeemore{
 		text-decoration: underline;
+		z-index: 0;
 	}
 	h2{
 		margin: 0;
@@ -29,6 +30,7 @@
 		align-items: center;
 		width: 100%;
 		flex-direction: column;
+		z-index: 0;
 	}
 	.contenaireCarousel{
 		width: 1800px;
@@ -36,6 +38,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		z-index: 0;
 	}
 
 	@media screen and (max-width: 2000px) {

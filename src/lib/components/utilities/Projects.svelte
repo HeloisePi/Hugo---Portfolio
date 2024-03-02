@@ -183,6 +183,7 @@
             flex-direction: column;
             gap: 90px;
             z-index: 200;
+            z-index: 0;
         }
 
         .top{
@@ -207,6 +208,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
 
+            z-index: 0;
         }
 
        .tag{

@@ -639,6 +639,7 @@ section{
         position: relative;
         width: 100%;
         overflow: hidden;
+        z-index: 0;
     }
 
     main{
@@ -653,6 +654,7 @@ section{
         align-items: center;
 		margin-bottom: 148px;
 		margin-bottom: 234px;
+        z-index: 0;
 	}
 	@media screen and (max-width: 900px) {
         main{

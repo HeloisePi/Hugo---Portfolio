@@ -24,6 +24,7 @@ html {
 	&.nav {
 		overflow: hidden;
 	}
+	scroll-behavior: smooth;
 }
 
 html.lenis-stopped {

@@ -20,6 +20,7 @@
 
 	import '$lib/styles/global.scss';
 	import Header from '$lib/components/Header.svelte';
+	import HeaderMobile from '$lib/components/utilities/HeaderMobile.svelte';
 
 	let className = '';
 
@@ -143,7 +144,13 @@
 <CustomHead title="Portfolio – Hugo MENSAH" />
 <div class={cn(`theme-${$themeStore}`, 'layout', className)}>
 	<!-- <PageTransition /> -->
-	<Header />
+	<div class="headerdesktop">
+		<Header />
+	</div>
+	<div class="headerdmobile">
+		<HeaderMobile />
+	</div>
+	
 	<svelte:component this={Cursor} />
 
 	<main class="main"><slot /></main>
@@ -152,6 +159,25 @@
 
 <style lang="scss">
 	@import '../lib/styles/_functions';
+
+
+	.headerdesktop {
+        display: block;
+      }
+      .headerdmobile {
+        display: none;
+        width: 100vw;
+      }
+      @media screen and (max-width: 1200px) {
+      .headerdesktop {
+        display: none;
+      }
+      .headerdmobile {
+        display: block;
+        width: 100vw;
+      }
+	
+	}
 
 	.layout {
 		

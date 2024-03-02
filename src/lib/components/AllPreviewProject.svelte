@@ -53,6 +53,7 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 0;
 
     }
     .contenaireProject{
@@ -64,6 +65,7 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         column-gap: 20px;
         width: min-content;
         height: min-content;
+        z-index: 0;
 
     }
 

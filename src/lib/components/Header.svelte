@@ -1,12 +1,12 @@
 <header>
-    <a href="#"><h3>Hugo MENSAH</h3></a>
+    <a href="/"><h3>Hugo MENSAH</h3></a>
 
     <div class="links">
-        <a href="#"><h3>Expériences</h3></a>
-        <a href="#"><h3>Projets</h3></a>
-        <a href="#"><h3>Dessins</h3></a>
-        <a href="#"><h3>CV</h3></a>
-        <a href="#"><h3>Contact</h3></a>
+     <a href="/#experience"><h3>Expériences</h3></a>
+      <a href="/projets"><h3>Projets</h3></a>
+      <a href="/dessin"><h3>Dessins</h3></a>
+      <a href="/#contact"><h3>Contacts</h3></a>
+      <a href="/#home"><h3>CV</h3></a>
     </div>
 </header>
 

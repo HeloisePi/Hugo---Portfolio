@@ -1,10 +1,11 @@
 <script>
 
 </script>
-<h2>
-    Contact
-</h2>
+
 <section id="contact">
+    <h2>
+        Contact
+    </h2>
 
 
 <a class="contactLink" href="mailto:hugo.mensah@mmibordeaux.com" target="_blank">
@@ -31,11 +32,25 @@ Enfin, merci à <a href="https://heloisepingitore.fr" target="_blank">Héloïse 
 
 
 <style>
+    h2{
+        transform: translateX(-110px);
+    }
+
+    @media screen and (max-width: 900px) {
+        h2{
+			transform: translateX(-30px);
+		}
+		
+    }
     #contact{
         margin-left: 110px;
         z-index: 1000;
+        z-index: 0;
+        padding-top: 181px;
 
     }
+
+
 
     .contactLink{
         padding-bottom: 65px;
