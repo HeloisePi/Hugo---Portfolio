@@ -11,7 +11,7 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         <PreviewProject
         title="Conviviel"
         description="Réalisation d'un épisode pilote d'une émission fictive"
-        src="/projets"
+        src="Project#Conviviel"
         srcImg="/project/projet1.png"
         srcImgHover="/project/projet1-hover.png">
         </PreviewProject>
@@ -19,7 +19,7 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         title="Hors Champs"
         description="Réalisation d’un court métrage de 5 min"
         srcImg="/project/projet2.png"
-        src="/projets"
+        src="/projets#Hors"
         srcImgHover="/project/projet2-hover.png">
         </PreviewProject>
         <PreviewProject

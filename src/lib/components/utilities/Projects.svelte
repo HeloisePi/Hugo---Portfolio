@@ -15,6 +15,8 @@
 </script>
 
 <div class="contenaire" id="{title1}">
+    <div class="cadre cadre1"></div>
+    <div class="cadre cadre2"></div>
     <div class="top">
         <h2>{title1}</h2>
         <div class="tags">
@@ -50,7 +52,9 @@
     </div>
     <div class="contenaireProject">
         <div class="visuelElement">
+            <div class="contenaireElement">
             <slot></slot>
+        </div>
         </div>
         <div class="titleDescription">
             <h3>{title2}</h3>
@@ -58,19 +62,38 @@
         </div>
     </div>
     <a href="{link}"><p>{linkTitle}</p></a>
-    <div class="cadre cadre1"></div>
-    <div class="cadre cadre2"></div>
+
 </div>
 
 
 <style lang="scss">
     @import '../../styles/global.scss';
 
+    .visuelElement{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        .contenaireElement{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000000;
+        }
+    }
+
     @media screen and (max-width: 1410px) {
         .contenaire .contenaireProject{
             align-items: center;
             justify-items: center;
             grid-template-columns: 1fr;
+            grid-template-rows: max-content 1fr;
+            gap: 1rem;
             h3{
                 position: absolute;
                 top: 10%;
@@ -87,11 +110,13 @@
         }
         .contenaire .cadre{
                 width: 125%;
+                z-index: 0;
             }
     }
 
     @media screen and (max-width: 900px) {
         .contenaire{
+            width: 100% !important;
             h2{
                 transform: translate(-13%, -4px);
             }
@@ -140,6 +165,7 @@
             border: 4px solid white;
             border-radius: 20px;
             z-index: 0;
+            z-index: 0;
         }
 
         .cadre1{
@@ -156,6 +182,7 @@
             display: flex;
             flex-direction: column;
             gap: 90px;
+            z-index: 200;
         }
 
         .top{
