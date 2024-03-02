@@ -27,6 +27,35 @@
 
 <style lang="scss">
 
+@import '../../styles/global.scss';
+
+a{
+      &:hover{
+        color: $offWhite;
+        text-decoration: none;
+
+        h2{
+			color: $offWhite ;
+
+		}
+		
+		h3{
+			color: $offWhite ;
+		}
+		
+		h4{
+			color: $offWhite ;
+		}
+		
+		p{
+			color: $offWhite ;
+		}
+      }
+
+
+    }
+
+
     .link{
         position: absolute;
         top: 85%;
