@@ -61,7 +61,9 @@
             <p>{description}</p>
         </div>
     </div>
+    {#if link}
     <a href="{link}"><p>{linkTitle}</p></a>
+    {/if}
 
 </div>
 
