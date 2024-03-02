@@ -354,8 +354,8 @@ import Projects from '$lib/components/utilities/Projects.svelte';
 
 <style lang="scss">
 
-    .cyber{
-        height: 350px;
+    main .cyberimg{
+        height: fit-content !important;
     }
 
     .carouselImage{

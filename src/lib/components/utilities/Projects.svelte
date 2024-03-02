@@ -98,7 +98,7 @@
             align-items: center;
             justify-items: center;
             grid-template-columns: 1fr;
-            grid-template-rows: max-content 1fr;
+            grid-template-rows: max-content 340px;
             gap: 1rem;
             h3{
                 position: absolute;
@@ -120,9 +120,9 @@
             }
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1060px) {
         .contenaire{
-            width: 100% !important;
+            width: 80% ;
             h2{
                 transform: translate(-13%, -4px);
             }
@@ -159,6 +159,10 @@
             a{
                 transform: translateY(-3rem);
             }
+        }
+        .contenaire .contenaireProject{
+
+            grid-template-rows: max-content 700px;
         }
     }
         .cadre{
@@ -205,11 +209,13 @@
 
         h2{
             margin: 0;
+            white-space: nowrap;
         }
 
         h3{
             margin-bottom: 54px;
             //margin-top: 110px;
+            white-space: nowrap;
         }
         .contenaireProject{
             display: grid;
