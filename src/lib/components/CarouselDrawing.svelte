@@ -186,6 +186,40 @@
     }
     }
 
+    @media screen and (max-width: 445px) {
+        .carouselImage{
+            width: 200px;
+        }
+        .two{
+        left : 200px;
+    }
+
+    .thee{
+        left : calc(200px*2);
+    }
+    .four{
+        left : calc(200px*3);
+    }
+
+    .five{
+        left : calc(200px*4);
+    }
+
+    .six{
+        left: calc(200px*5);
+    }
+    .seven{
+        left: calc(200px*6);
+    }
+
+    .height{
+        left: calc(200px*7);
+    }
+    }
+
+    
+    
+
 	
 
 </style>
