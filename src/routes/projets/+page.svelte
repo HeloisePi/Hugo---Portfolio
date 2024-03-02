@@ -303,7 +303,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag2="DESIGN"
     tag2Color= "#C20ABA"
     >
-        <img class=" " src="project/PageProject/cyber/1.jpg" alt="">
+        <img class="cyberimg " src="project/PageProject/cyber/1.jpg" alt="">
     </Projects>
 
 
@@ -353,6 +353,10 @@ import Projects from '$lib/components/utilities/Projects.svelte';
 </main>
 
 <style lang="scss">
+
+    .cyber{
+        height: 350px;
+    }
 
     .carouselImage{
         position: absolute;
@@ -482,6 +486,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
         transition: width 1s ease-in-out;
         position: relative;
         padding-left: 129px;
+        padding-right: 50px;
 
         /* Animation appliquée à .filters */
         
