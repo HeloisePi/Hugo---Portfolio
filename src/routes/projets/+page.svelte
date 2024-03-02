@@ -288,6 +288,22 @@ import Projects from '$lib/components/utilities/Projects.svelte';
 
 
 
+    <Projects
+    title1="Cybersécurité"
+    title2= "LE PETIT LIVRE DE LA CYBERSÉCURITÉ"
+    link= "https://maria-bacchanight.netlify.app/"
+    linkTitle= "Regarder le livre"
+    description= "Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations."
+    tag1= "ÉCRITURE"
+    tag1Color= "#C20A0A" 
+    tag2="DESIGN"
+    tag2Color= "#C20ABA"
+    >
+        <img class=" " src="project/PageProject/cyber/1.jpg" alt="">
+    </Projects>
+
+
+
 
 
     <Projects
