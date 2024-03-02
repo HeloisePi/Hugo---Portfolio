@@ -2,10 +2,10 @@
     <a href="/" class="hugo"><h3>Hugo MENSAH</h3></a>
 
     <div class="links">
-     <a href="/#experience"><h3>Expériences</h3></a>
+     <a href="../../#experience"><h3>Expériences</h3></a>
       <a href="/projets"><h3>Projets</h3></a>
       <a href="/dessin"><h3>Dessins</h3></a>
-      <a href="/#contact"><h3>Contacts</h3></a>
+      <a href="../../#contact"><h3>Contacts</h3></a>
       <a target="blank" href="/CV-MENSAH-Hugo.pdf"><h3>CV</h3></a>
     </div>
 </header>

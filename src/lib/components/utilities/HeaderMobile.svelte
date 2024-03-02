@@ -44,10 +44,10 @@
       <div class="toggle toggle-close">
         <img class="menu-line" src="/icon/cross.svg" alt="fermer le menu">
       </div>
-      <a class="close-menu" href="/#experience"><h3>Expériences</h3></a>
+      <a class="close-menu" href="../../#experience"><h3>Expériences</h3></a>
       <a class="close-menu" href="/projets"><h3>Projets</h3></a>
       <a class="close-menu" href="/dessin"><h3>Dessins</h3></a>
-      <a class="close-menu" href="/#contact"><h3>Contacts</h3></a>
+      <a class="close-menu" href="../../#contact"><h3>Contacts</h3></a>
       <a  target="blank" class="close-menu" href="/CV-MENSAH-Hugo.pdf"><h3>CV</h3></a>
 
       <img class="stain" src="/stain/stain1.svg" alt="">
