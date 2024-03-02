@@ -2,7 +2,7 @@
 
 <footer>
 <p>© 2024 Hugo MENSAH - Tous droits réservés</p>
-<a href="/mentions-legales"><p>Mentions légales</p></a>
+<a href="/mentions-legales#Mentions légales"><p>Mentions légales</p></a>
 </footer>
 
 <style lang="scss">

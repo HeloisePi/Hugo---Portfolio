@@ -1,3 +1,7 @@
+<script>
+	import Hero from "$lib/components/Hero.svelte";
+
+</script>
 
 
     <div class="contenaireStain">
@@ -5,9 +9,17 @@
         <img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
         <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
     </div>
-    <section>
-    <h1>Mentions légales</h1>
-</section>
+
+
+    <div class="contenaireStain">
+        <img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
+        <img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
+        <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
+    </div>
+<Hero
+title="Mentions légales"></Hero>
+
+
 <main>
     <p>Adresse e-mail : hugo.mensah@mmibordeaux.com <br>
         Numéro de téléphone : +33 7 78 56 44 68 <br>
@@ -116,22 +128,6 @@
         height: 450px;
         width: auto;
     }
-
-section{
-        /* position: absolute; */
-        /* top: 0; */
-        /* height: 190vh; */
-        height: 100vh; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 1rem;
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-
     main{
 		padding: 110px;
 		padding-bottom: 0;
@@ -162,33 +158,5 @@ section{
 		width: 100vw;
         padding: 20vh;
 	}
-
-    @media screen and (max-height: 1000px) {
-                section h1{
-                    font-size: 48px;
-                }
-                h2{
-                    font-size: 28px;
-                }
-                section .scroll{
-                    width: 70px;
-                    margin-top: 0px;
-                    
-                }
-                section .arrow{
-                    width: 15px;
-                    height: auto;
-                }
-
-            }
-            @media screen and (max-height: 500px) {
-                section{
-                    gap: 0;
-                }
-                h2{
-                    margin-bottom: 40px;
-                }
-            }
-    
 
 </style>

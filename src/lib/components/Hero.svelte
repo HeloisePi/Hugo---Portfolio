@@ -1,14 +1,21 @@
-<script></script>
+<script>
+    export let title;
+    export let title2;
 
-<section id="hero">
+</script>
+
+<section id="{title}">
 
     <h1>
-        PORTFOLIO
+        {title}
     </h1>
 
+
+    {#if title2}
     <h2>
-        Hugo MENSAH
+        {title2}
     </h2>
+    {/if}
 
     <div class="scroll">
         <img class="textScroll" src="/scroll.svg" alt="Défilez en bas">
@@ -16,7 +23,7 @@
     </div>
 </section>
 <style>
-    #hero{
+    section{
         /* position: absolute; */
         /* top: 0; */
         padding-top: 20vh;
@@ -33,7 +40,7 @@
     }
 
     @media screen and (max-height: 1000px) {
-                #hero h1{
+                section h1{
                     font-size: 48px;
                 }
                 h2{

@@ -1,6 +1,7 @@
 <script>
 
-    import MiniCarousel from '$lib/components/utilities/MiniCarousel.svelte';
+    import Hero from '$lib/components/Hero.svelte';
+import MiniCarousel from '$lib/components/utilities/MiniCarousel.svelte';
 import Projects from '$lib/components/utilities/Projects.svelte'; 
     import { onMount, onDestroy } from 'svelte';
     import { writable, get } from 'svelte/store';
@@ -99,16 +100,13 @@ import Projects from '$lib/components/utilities/Projects.svelte';
         }
 }
 </script>
-<div class="relative">
-    <section>
-        <h1>Projects</h1>
-        </section>
-    <div class="contenaireStain secondContenaireStain">
-        <img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
-        <img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
-        <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
-    </div>
+<div class="contenaireStain">
+    <img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
+    <img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
+    <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
 </div>
+<Hero 
+title="Projets"></Hero>
 
 
 

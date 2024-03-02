@@ -128,7 +128,9 @@
 	<img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
 </div>
 <section>
-<Hero></Hero>
+<Hero
+title="Portfolio"
+title2="Hugo MENSAH"></Hero>
 
 
 <About />
