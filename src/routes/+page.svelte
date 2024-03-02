@@ -144,7 +144,6 @@ title2="Hugo MENSAH"></Hero>
 </div>	
 
 <AllPreviewProject>
-
 </AllPreviewProject>
 
 <div class="relative">

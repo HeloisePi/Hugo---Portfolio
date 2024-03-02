@@ -1,4 +1,5 @@
 <script>
+	import ButtonMore from "./utilities/ButtonMOre.svelte";
 import PreviewProject from "./utilities/PreviewProject.svelte";
 
 </script>
@@ -36,13 +37,42 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         srcImg="/project/projet4.png"
         srcImgHover="/project/projet4-hover.png">
         </PreviewProject>
-        <a href="/projets" class="all"><p>Tout découvrir</p></a>
+        
     </div>
+    <ButtonMore href="/projets"><p>Tout découvrir</p></ButtonMore>
 
 </section>
 
 
-<style>
+<style lang="scss">
+     @import '../styles/global.scss';
+    a{
+        color: #DDD7D0;
+		z-index: 0;
+        text-decoration: underline;
+        width: fit-content;
+        &:hover{
+            text-decoration: underline;
+            
+            color: $offWhite;
+            p{
+                width: fit-content;
+                color: #DDD7D0;
+                text-decoration: underline;
+            }
+        }
+       
+	}
+    .contenaireProject p{
+                width: fit-content;
+                color: #DDD7D0;
+                text-decoration: none;
+                &:hover{
+                    color: #DDD7D0;
+                }
+    }
+
+
     .all p{
         text-decoration: underline;
     }
@@ -54,6 +84,7 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         justify-content: center;
         align-items: center;
         z-index: 2;
+        flex-direction: column;
 
     }
     .contenaireProject{
@@ -65,6 +96,8 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         column-gap: 20px;
         width: min-content;
         height: min-content;
+        align-items: center;
+        justify-items: center;
         z-index: 5;
 
     }
@@ -72,6 +105,8 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
     @media screen and (max-width: 1180px) {
         .contenaireProject{
             grid-template-columns: 1fr;
+            grid-row: 1fr 1fr 1fr 1fr;
+            margin-bottom: 100px;
             padding: 0px;
             gap: 8rem;
         }

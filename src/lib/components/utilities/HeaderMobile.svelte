@@ -81,6 +81,7 @@
       position: fixed;
   
       .headershow {
+        background-color: $darkViolet;
         height: 65px;
         width: 100vw;
         display: flex;

@@ -21,6 +21,8 @@
         position: fixed;
         width: 100vw;
         z-index: 90000;
+        background-color: $darkViolet;
+        
     }
 
     .links{

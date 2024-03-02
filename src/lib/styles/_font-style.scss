@@ -57,9 +57,11 @@ p{
 
 a{
 	color: $offWhite;
+	width: fit-content;
 	&:hover{
 		color: $lightViolet;
 		text-decoration: underline;
+		width: fit-content;
 		*{
 			color: $lightViolet ;
 		}

@@ -1,5 +1,6 @@
 <script>
 	import Carousel from "./utilities/Carousel.svelte";
+	import ButtonMore from "./utilities/ButtonMore.svelte";
 	import MiniCarousel from "./utilities/MiniCarousel.svelte";
 
 
@@ -20,19 +21,28 @@
             <img class="carouselImage five"src="/dessin/Wanda.jpg" alt="dessin">
 		</MiniCarousel>
 	</div>
-	<a href="/dessin"><p class="seeemore">Tout découvrir</p></a>
+    <ButtonMore
+    href="/dessin"><p>Tout découvrir</p></ButtonMore>
 </section>
 
 <style lang="scss">
-
+ @import '../styles/global.scss';
 
 	a{
+        color: $offWhite;
 		z-index: 0;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: underline;
+            
+            color: $offWhite;
+            p{
+                color: $offWhite;
+                text-decoration: underline;
+            }
+        }
 	}
-	.seeemore{
-		text-decoration: underline;
-		z-index: 0;
-	}
+
 	h2{
 		margin: 0;
 		margin-top: 148px;
