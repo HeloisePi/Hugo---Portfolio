@@ -71,6 +71,10 @@
 <style lang="scss">
     @import '../../styles/global.scss';
 
+    a{
+        z-index: 10;
+    }
+
     .visuelElement{
         position: relative;
         width: 100%;
@@ -133,6 +137,7 @@
 
             a{
                 transform: translateY(-2rem);
+                z-index: 10;
             }
 
             .tag{
