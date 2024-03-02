@@ -56,18 +56,29 @@ p{
 
 a{
 	color: $offWhite;
-
 	&:hover{
 		color: $lightViolet;
 		text-decoration: underline;
+		*{
+			color: $lightViolet ;
+		}
+
+		h2{
+			color: $lightViolet ;
+
+		}
+		
+		h3{
+			color: $lightViolet ;
+		}
+		
+		h4{
+			color: $lightViolet ;
+		}
+		
+		p{
+			color: $lightViolet ;
+		}
+
 	}
-
-	
-
-
-}
-
-a:hover:first-child{
-	color: $lightViolet;
-	text-decoration: underline;
 }

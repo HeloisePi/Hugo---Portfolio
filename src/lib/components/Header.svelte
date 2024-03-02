@@ -1,5 +1,5 @@
 <header>
-    <a href="/"><h3>Hugo MENSAH</h3></a>
+    <a href="/" class="hugo"><h3>Hugo MENSAH</h3></a>
 
     <div class="links">
      <a href="/#experience"><h3>Expériences</h3></a>
@@ -10,7 +10,8 @@
     </div>
 </header>
 
-<style>
+<style lang="scss">
+     @import '../styles/global.scss';
     header{
         display: flex;
         justify-content: space-between;
@@ -29,5 +30,11 @@
         align-items: center;
         padding: 2rem;
         height: 76px;
+    }
+    .hugo{
+      &:hover{
+        color: $offWhite;
+        text-decoration: none;
+      }
     }
 </style>

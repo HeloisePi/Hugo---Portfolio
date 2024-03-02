@@ -35,7 +35,7 @@
 <section>
   <div class="headermobile">
     <div class="headershow">
-      <a href="/"><h4>Hugo MENSAH</h4></a>
+      <a href="/" class="hugo"><h4>Hugo MENSAH</h4></a>
       <div class="toggle toggle-open">
         <img class="menu-line" src="/icon/menu.svg" alt="menu">
       </div>
@@ -57,6 +57,13 @@
 
 <style lang="scss">
     @import '../../styles/global.scss';
+
+    .hugo{
+      &:hover{
+        color: $offWhite;
+        text-decoration: none;
+      }
+    }
 
     section {
       overflow: hidden;
