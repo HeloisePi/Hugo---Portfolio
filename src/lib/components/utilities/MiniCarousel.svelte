@@ -98,4 +98,16 @@
         }
 
     }
+    @media screen and (max-width: 445px) {
+        .contenaireButton {
+            width: 200px;
+
+        }
+        .carousel {
+            width: 200px;
+        }
+        .carouselImage {
+            width: 200px;
+        }
+    }
 </style>

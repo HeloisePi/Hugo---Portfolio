@@ -62,7 +62,7 @@
         </div>
     </div>
     {#if link}
-    <a href="{link}"><p>{linkTitle}</p></a>
+    <a target="blank" href="{link}"><p>{linkTitle}</p></a>
     {/if}
 
 </div>
@@ -107,6 +107,9 @@
                 transform: translateX(-50%);
                 
             }
+            p{
+                transform: translateY(-25%);
+            }
 
             .cadre1{
                 transform: translate(-93px, -4px);
@@ -121,10 +124,19 @@
     }
 
     @media screen and (max-width: 1060px) {
-        .contenaire{
+        .contenaire {
             width: 80% ;
+            
             h2{
                 transform: translate(-13%, -4px);
+            }
+
+            .contenaireProject  h3{
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                
             }
 
             .cadre1{
@@ -154,16 +166,35 @@
             }
         }
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 550px) {
         .contenaire{
             a{
                 transform: translateY(-3rem);
             }
+            h2{
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            .contenaireProject .titleDescription h3{
+                font-size: 20px;
+                top: 6%;
+                white-space: wrap;
+            }
         }
         .contenaire .contenaireProject{
-
-            grid-template-rows: max-content 700px;
+            grid-template-rows: max-content 600px;
         }
+    }
+
+    @media screen and (max-width: 360px) {
+
+        .contenaire .contenaireProject{
+
+        grid-template-rows: max-content 700px;
+        }
+        .contenaire .contenaireProject p{
+                transform: translateY(-10%);
+            }
     }
         .cadre{
             background-color: $lightViolet;

@@ -162,7 +162,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     <Projects
     title1="COURT MÉTRAGE"
     title2= "Hors  Champs"
-    link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
+    link= "https://www.youtube.com/embed/T0OiTC6awZA?si=E0HaU-eKt42zPcdC"
     linkTitle= "Regarder le court métrage"
     description= "'Hors champs' était un projet d'audiovisuel de deux semaines, où nous devions réaliser un court métrage en groupe de cinq personnes, avec un genre imposé. Notre groupe a été assigné au genre 'Buddy Comedy RoadTrip'.
     Durant ce projet, nous avons dû créer une affiche de film, un site vitrine, ainsi qu'un making-of. Cette expérience m'a offert une première occasion de me lancer dans l'acting et m'a permis de développer mes compétences en écriture et en motion design en réalisant le générique du film."
@@ -171,13 +171,13 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag2="DESIGN"
     tag2Color= "#C20ABA"
     >
-    <iframe width="90%" height="300px" src="https://www.youtube.com/embed/T0OiTC6awZA?si=E0HaU-eKt42zPcdC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="90%" height="70%" src="https://www.youtube.com/embed/T0OiTC6awZA?si=E0HaU-eKt42zPcdC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </Projects>
     <Projects
     title1="Bande dessinée"
     title2= "Against my side"
-    link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
-    linkTitle= "Lien Figma"
+    link= "/Joséphie_SAINT-YGAN-Hugo_MENSAH-Against-My-Side.pdf"
+    linkTitle= "Regarder la BD"
     description= "Lors de ce devoir en binôme, nous avons été chargés d'écrire et de créer une bande dessinée en anglais. Nous avons commencé par élaborer des personnages, une histoire et un scénario pour notre bande dessinée. Nous avons ensuite travaillé ensemble pour créer les dessins et les dialogues qui allaient être utilisés. Nous avons essayé de faire preuve de créativité tout en nous assurant que notre anglais était correct et facile à comprendre. Ensuite nous avons réalisé tous les dessins, grâce à l'application Procreate."
     tag1= "ÉCRITURE"
     tag1Color= "#C20A0A"
@@ -207,7 +207,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag2="DESIGN"
     tag2Color= "#C20ABA"
     >
-    <iframe width="90%" height="400px" src="https://www.youtube.com/embed/c4llM-dEMJw?si=cpwkIs9pSpB_F6AG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="90%" height="70%" src="https://www.youtube.com/embed/c4llM-dEMJw?si=cpwkIs9pSpB_F6AG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </Projects>
 
 
@@ -242,7 +242,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag1= "AUDIOVISUEL"
     tag1Color= "#0A12C2"
     >
-    <iframe width="90%" height="400px" src="https://www.youtube.com/embed/-JUKu1lUfOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="90%" height="70%" src="https://www.youtube.com/embed/-JUKu1lUfOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </Projects>
 
 
@@ -287,7 +287,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     tag3Color= "#C20A0A"
 
     >
-    <iframe width="90%" height="400px" src="https://www.youtube.com/embed/Wrts3Bk6khw?si=3Lmk1DOO9RRXm6Gu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="90%" height="70%" src="https://www.youtube.com/embed/Wrts3Bk6khw?si=3Lmk1DOO9RRXm6Gu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </Projects>
 
 
@@ -295,7 +295,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     <Projects
     title1="Cybersécurité"
     title2= "LE PETIT LIVRE DE LA CYBERSÉCURITÉ"
-    link= "https://maria-bacchanight.netlify.app/"
+    link= "/Livret-CybersecuriteEntreprise.pdf"
     linkTitle= "Regarder le livre"
     description= "Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations."
     tag1= "ÉCRITURE"
@@ -429,6 +429,37 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     }
     }
 
+    @media screen and (max-width: 445px) {
+        .carouselImage{
+            width: 200px;
+        }
+        .two{
+        left : 200px;
+    }
+
+    .thee{
+        left : calc(200px*2);
+    }
+    .four{
+        left : calc(200px*3);
+    }
+
+    .five{
+        left : calc(200px*4);
+    }
+
+    .six{
+        left: calc(200px*5);
+    }
+    .seven{
+        left: calc(200px*6);
+    }
+
+    .height{
+        left: calc(200px*7);
+    }
+    }
+
 
 
 
@@ -462,6 +493,20 @@ import Projects from '$lib/components/utilities/Projects.svelte';
            
         }
 
+    }
+
+    @media screen and (max-width: 450px) {
+        .contenairefilters .filters{
+            padding-top: 49px;
+            padding-left: 0px;
+
+        
+            h3 {
+                top: 15px
+            }
+        }
+
+    
     }
 
     .contenairefilters{
