@@ -430,14 +430,14 @@ import Projects from '$lib/components/utilities/Projects.svelte';
 
 
     .filter{
-        width: 900px;
+        width: 950px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         transform: translateX(43px);
     }
 
-    @media screen and (max-width: 730px) {
+    @media screen and (max-width: 1250px) {
         .filter{
             
             flex-direction: column;
@@ -481,6 +481,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
         overflow: hidden;
         transition: width 1s ease-in-out;
         position: relative;
+        padding-left: 129px;
 
         /* Animation appliquée à .filters */
         
@@ -495,6 +496,10 @@ import Projects from '$lib/components/utilities/Projects.svelte';
 
 .filters h3 {
     white-space: nowrap;
+    position: absolute;
+    top: -30;
+    left: -60;
+    left: 42px;
 }
 
 /* Définition de l'animation */
@@ -555,8 +560,12 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     padding: 0.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: fit-content;
     height: 30px;
+    width: 177px;
+    text-align: center;
+    position: relative;
 }
 
 .tag .color {
@@ -566,6 +575,8 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     /* Utilisez une couleur spécifique au lieu de var(--tag1Color) car --tag1Color n'est pas défini dans le CSS que vous avez fourni */
     background-color: #000; /* Par exemple */
     margin-right: 0.5rem;
+    position: absolute;
+    left: 4px;
 }
 
 // ----------------------------------------------------------------
