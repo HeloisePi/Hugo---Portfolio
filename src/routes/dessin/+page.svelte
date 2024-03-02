@@ -124,7 +124,8 @@ title="Divers">
 
     img{
         height: 450px;
-        width: auto;
+        width: fit-content;
+        object-fit: cover;
     }
 
 section{
@@ -197,6 +198,10 @@ section{
                 }
                 h2{
                     margin-bottom: 40px;
+                }
+                img{
+                    height: fit-content;
+                    width: fit-content;
                 }
             }
     
