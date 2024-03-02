@@ -174,7 +174,7 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     <iframe width="90%" height="300px" src="https://www.youtube.com/embed/T0OiTC6awZA?si=E0HaU-eKt42zPcdC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </Projects>
     <Projects
-    title1="BanDe dessinée"
+    title1="Bande dessinée"
     title2= "Against my side"
     link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
     linkTitle= "Lien Figma"
