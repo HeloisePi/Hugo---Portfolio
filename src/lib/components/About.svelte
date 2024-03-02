@@ -26,7 +26,7 @@
         grid-template-columns: 50% 50%;
         align-items: center;
         justify-items: center;
-        z-index: 5;
+        z-index: 2;
     }
 
     .hugoFace{

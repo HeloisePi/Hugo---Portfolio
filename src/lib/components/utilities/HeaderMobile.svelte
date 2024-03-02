@@ -65,6 +65,10 @@
       }
     }
 
+    a{
+      z-index: 100;
+    }
+
     section {
       overflow: hidden;
       position: relative;
@@ -183,8 +187,8 @@
       .toggle-close{
         img{
             position: absolute;
-    top: 20px;
-    right: 20px;
+            top: 20px;
+            right: 20px;
         }
       }
       
