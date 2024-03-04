@@ -1,5 +1,5 @@
 <script>
-	import ButtonMore from "./utilities/ButtonMOre.svelte";
+	import ButtonMore from "./utilities/ButtonMore.svelte";
 import PreviewProject from "./utilities/PreviewProject.svelte";
 
 </script>
