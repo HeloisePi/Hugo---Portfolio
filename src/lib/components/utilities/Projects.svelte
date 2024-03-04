@@ -12,6 +12,8 @@
     export let tag3Color;
     export let tag4;
     export let tag4Color;
+
+    console.log("link", link)
 </script>
 
 <div class="contenaire" id="{title1}">
@@ -64,12 +66,20 @@
     {#if link}
     <a target="blank" href="{link}"><p>{linkTitle}</p></a>
     {/if}
+    {#if link==undefined }
+    <a class="NotProject"href="#">Lien vers le projet                        </a>
+    {/if }
 
 </div>
 
 
 <style lang="scss">
     @import '../../styles/global.scss';
+
+    .NotProject{
+        opacity: 0;
+        cursor: initial;
+    }
 
     a{
         z-index: 10;

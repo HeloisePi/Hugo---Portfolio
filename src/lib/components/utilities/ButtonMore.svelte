@@ -16,8 +16,6 @@
         border: 2px solid $offWhite;
         z-index: 2;
         text-decoration: underline;
-        width: fit-content;
-        width: fit-content;
         text-align: center;
         &:hover{
             text-decoration: underline;

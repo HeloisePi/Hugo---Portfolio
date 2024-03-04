@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
     let carouselImage;
-    let index = 0;
+    let index = 1;
     const totalItems = 5; // Nombre total d'éléments dans le carousel
 
     function updateAccessory() {

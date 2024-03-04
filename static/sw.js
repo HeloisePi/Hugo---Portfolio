@@ -179,11 +179,11 @@ define(['./workbox-7028bf80'], function (e) {
           revision: 'df4862f22178cc0c',
         },
         {
-          url: '/android-chrome-192x192.png',
+          url: '/static/favicon.ico',
           revision: '04eb6136d9dc975f98a1f26dad3a18c2',
         },
         {
-          url: '/android-chrome-512x512.png',
+          url: '/static/favicon.ico',
           revision: '5ba0786478ab465215d7156b8a623a5e',
         },
         {

@@ -50,13 +50,11 @@ import PreviewProject from "./utilities/PreviewProject.svelte";
         color: #DDD7D0;
 		z-index: 0;
         text-decoration: underline;
-        width: fit-content;
         &:hover{
             text-decoration: underline;
             
             color: $offWhite;
             p{
-                width: fit-content;
                 color: #DDD7D0;
                 text-decoration: underline;
             }

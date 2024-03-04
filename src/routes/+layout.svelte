@@ -141,7 +141,7 @@
 </script>
 
 <!-- <RealViewport /> -->
-<CustomHead title="Portfolio – Hugo MENSAH" />
+<CustomHead title="Portfolio | Hugo MENSAH" />
 <div class={cn(`theme-${$themeStore}`, 'layout', className)}>
 	<!-- <PageTransition /> -->
 	<div class="headerdesktop">

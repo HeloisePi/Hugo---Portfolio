@@ -132,6 +132,40 @@ title="Projets"></Hero>
     </div>
 
 </div>
+
+
+    <!-- <Projects
+    title1="titre de ton projet"      
+    title2= "Sous titre de ton projet (nom que vous avez donné au projet)"
+    link= "lien de ton project"
+    linkTitle= "Intitulé du lien "
+    description= "Description du projet"
+
+
+
+    tag1= "AUDIOVISUEL"
+    tag1Color= "#0A12C2"
+
+    tag2="DESIGN"
+    tag2Color= "#C20ABA"
+
+
+    >
+
+    <iframe  width="90%" height="70%"  src="https://www.youtube.com/embed/9QuENqojmSY?si=Qqo4HWphiYp3OtMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <img src"/dp^v,d^fi">
+    <MiniCarousel
+    taille="6">
+            <img class="carouselImage one" src="/project/PageProject/convivial/1.jpg" alt="">
+            <img class="carouselImage two" src="/project/PageProject/convivial/2.jpg" alt="">
+            <img class="carouselImage thee" src="/project/PageProject/convivial/3.jpg" alt="">
+            <img class="carouselImage four" src="/project/PageProject/convivial/4.jpg" alt="">
+            <img class="carouselImage five" src="/project/PageProject/convivial/5.jpg" alt="">
+            <img class="carouselImage six" src="/project/PageProject/convivial/6.jpg" alt="">
+    </MiniCarousel>
+
+</Projects> -->
     
 
     <Projects
@@ -268,6 +302,29 @@ title="Projets"></Hero>
     </MiniCarousel>
     </Projects>
 
+    <Projects
+    title1="Blog’art"
+    title2= "Exim"
+    link= "https://github.com/HeloisePi/Natica"
+    linkTitle= "Lien vers le github "
+    description= "Le projet Blog'art visait à créer un blog thématique. Nous avons commencé par définir notre audiance cible avec des personae afin de comprendre leurs besoins et leurs attentes, puis nous avons élaboré des wireframes pour structurer le site. En parallèle, nous avons travaillé sur l'identité visuelle et le design graphique, tout en restant à l'affût des tendances actuelles. Une fois les maquettes finalisées, nous avons rédigé des articles sur les expériences immersives de Bordeaux. Enfin, nous avons programmé le blog en utilisantHTML, CSS, JavaScript et PHP afin d’obtenir le résultat final."
+    tag1= "DESIGN"
+    tag1Color= "#C20ABA"
+    tag2="DÉVELOPPEMENT"
+    tag2Color= "#C25A0A"
+    tag3= "ÉCRITURE"
+    tag3Color= "#C20A0A"
+    >
+    <MiniCarousel
+    taille="4">
+        <img class="carouselImage one" src="project/PageProject/blog/1.jpg" alt="">
+        <img class="carouselImage two" src="/project/PageProject/blog/2.jpg" alt="">
+        <img class="carouselImage thee" src="/project/PageProject/blog/3.jpg" alt="">
+        <img class="carouselImage four" src="/project/PageProject/blog/4.jpg" alt="">
+       
+    </MiniCarousel>
+    </Projects>
+
 
 
 
@@ -295,7 +352,7 @@ title="Projets"></Hero>
     title2= "LE PETIT LIVRE DE LA CYBERSÉCURITÉ"
     link= "/Livret-CybersecuriteEntreprise.pdf"
     linkTitle= "Regarder le livre"
-    description= "Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations."
+    description= "Ce projet à été réalisé en collaboration avec la gendarmerie et mon BUT MMI. En effet, nous devions réaliser un livret qui serait à destination des entreprises. Le but de ce livret, est de proposer des conseils, des fiches pratiques, un glossaire et d’avoir les bons réflexes sur la cybersécurité. Durant ce projet, j’ai pu participer à l’élaboration de designs, réaliser quelques fiches pratique et éléments visuels."
     tag1= "ÉCRITURE"
     tag1Color= "#C20A0A" 
     tag2="DESIGN"
