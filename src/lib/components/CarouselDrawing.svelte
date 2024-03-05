@@ -22,7 +22,7 @@
 		</MiniCarousel>
 	</div>
     <ButtonMore
-    href="/dessin"><p>Tout découvrir</p></ButtonMore>
+    href="/dessin"><p style="color: #DDD7D0;">Tout découvrir</p></ButtonMore>
 </section>
 
 <style lang="scss">

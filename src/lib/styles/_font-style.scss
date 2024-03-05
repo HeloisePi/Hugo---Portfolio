@@ -22,6 +22,11 @@
 }
 
 
+@font-face {
+	font-family: 'Supreme-Regular-italic';
+	src: url('/fonts/Supreme/Supreme-Italic.ttf');
+}
+
 h1 {
 	color: #DDD7D0;
 	font-size: 96px;
@@ -77,9 +82,14 @@ a{
 			color: $lightViolet ;
 		}
 		
-		p{
-			color: $lightViolet ;
-		}
+		// p{
+		// 	color: $lightViolet ;
+		// }
 
 	}
+}
+
+
+.italic{
+	font-family: 'Supreme-Regular-italic' !important;
 }

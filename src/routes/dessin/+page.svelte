@@ -10,9 +10,10 @@ import CarouselPageDessin from "$lib/components/utilities/CarouselPageDessin.sve
         <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
     </div>
 <Hero
-title="DESSINS">
+title="DESSINS"
+scroll="#dessin">
 </Hero>
-<main>
+<main id="dessin">
 <CarouselPageDessin 
 title="Portrait">
     <img src="/dessin/femme_blonde.jpg" alt="femme_blonde">

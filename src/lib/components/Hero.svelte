@@ -1,7 +1,7 @@
 <script>
     export let title;
     export let title2;
-
+    export let scroll;
 </script>
 
 <section id="{title}">
@@ -17,10 +17,10 @@
     </h2>
     {/if}
 
-    <div class="scroll">
+    <a href="{scroll}" class="scroll">
         <img class="textScroll" src="/scroll.svg" alt="Défilez en bas">
         <img class="arrow" src="/arrow.svg" alt="Défilez en bas"/>
-    </div>
+    </a>
 </section>
 <style>
     section{

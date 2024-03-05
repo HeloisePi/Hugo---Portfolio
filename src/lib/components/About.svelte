@@ -1,4 +1,4 @@
-<section>
+<section id="about">
 
     <div class="hugoFace">
        <img class="portrait" src="/portrait.png" alt="portrait">

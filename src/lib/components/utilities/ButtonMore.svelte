@@ -17,9 +17,11 @@
         z-index: 2;
         text-decoration: underline;
         text-align: center;
+        color: $offWhite !important;
         &:hover{
             text-decoration: underline;
             background-color: $lightViolet;
+            color: $offWhite !important;
         }
         p{
             text-decoration: underline;
@@ -27,4 +29,8 @@
         }
 
     }
+
+    a:hover p {
+    color: #e1d7cb !important;
+}
 </style>

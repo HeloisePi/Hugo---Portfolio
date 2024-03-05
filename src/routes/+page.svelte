@@ -130,7 +130,8 @@
 <section>
 <Hero
 title="Portfolio"
-title2="Hugo MENSAH"></Hero>
+title2="Hugo MENSAH"
+scroll="#about"></Hero>
 
 
 <About />

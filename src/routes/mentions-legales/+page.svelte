@@ -17,10 +17,11 @@
         <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
     </div>
 <Hero
-title="Mentions légales"></Hero>
+title="Mentions légales"
+scroll="#mention"></Hero>
 
 
-<main>
+<main id="mention">
     <p>Adresse e-mail : hugo.mensah@mmibordeaux.com <br>
         Numéro de téléphone : +33 7 78 56 44 68 <br>
         Hébergement : Netlify <br>

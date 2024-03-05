@@ -64,7 +64,7 @@
         </div>
     </div>
     {#if link}
-    <a target="blank" href="{link}"><p>{linkTitle}</p></a>
+    <a target="blank" class="link" href="{link}"><p style="font-size: 20px;">{linkTitle}</p></a>
     {/if}
     {#if link==undefined }
     <a class="NotProject"href="#">Lien vers le projet                        </a>
@@ -124,6 +124,10 @@
             .cadre1{
                 transform: translate(-93px, -4px);
             }
+
+            .contenaire .contenaireProject .contenaireProject .link{
+                transform: translateY(-2rem) !important;
+            }
             
             
         }
@@ -161,6 +165,10 @@
                 transform: translateY(-2rem);
                 z-index: 10;
             }
+
+            .link{
+                font-size: 20px;
+               }
 
             .tag{
                 background-color: #1e092200;

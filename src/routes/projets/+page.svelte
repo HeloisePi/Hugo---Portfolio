@@ -1,8 +1,8 @@
 <script>
 
     import Hero from '$lib/components/Hero.svelte';
-import MiniCarousel from '$lib/components/utilities/MiniCarousel.svelte';
-import Projects from '$lib/components/utilities/Projects.svelte'; 
+    import MiniCarousel from '$lib/components/utilities/MiniCarousel.svelte';
+    import Projects from '$lib/components/utilities/Projects.svelte'; 
     import { onMount, onDestroy } from 'svelte';
     import { writable, get } from 'svelte/store';
 
@@ -106,11 +106,12 @@ import Projects from '$lib/components/utilities/Projects.svelte';
     <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
 </div>
 <Hero 
-title="Projets"></Hero>
+title="Projets"
+scroll="#project"></Hero>
 
 
 
-<main>
+<main id="project">
     <div class="contenairefilters">
 
     
@@ -352,7 +353,7 @@ title="Projets"></Hero>
     title2= "LE PETIT LIVRE DE LA CYBERSÉCURITÉ"
     link= "/Livret-CybersecuriteEntreprise.pdf"
     linkTitle= "Regarder le livre"
-    description= "Ce projet à été réalisé en collaboration avec la gendarmerie et mon BUT MMI. En effet, nous devions réaliser un livret qui serait à destination des entreprises. Le but de ce livret, est de proposer des conseils, des fiches pratiques, un glossaire et d’avoir les bons réflexes sur la cybersécurité. Durant ce projet, j’ai pu participer à l’élaboration de designs, réaliser quelques fiches pratique et éléments visuels."
+    description= "Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations."
     tag1= "ÉCRITURE"
     tag1Color= "#C20A0A" 
     tag2="DESIGN"
