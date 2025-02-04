@@ -8,7 +8,7 @@
     </div>
 
     <div class="text">
-        <h3>Je m’appelle Hugo, j’ai 22 ans. </h3>
+        <h3>Je m’appelle Hugo, j’ai 22 ans.</h3>
         <p>Actuellement en troisième année du BUT MMI (Métiers du Multimédia et de l’Internet) à l’IUT de Bordeaux Montaigne. Je suis à la recherche d’un stage et d'une alternance dans l'UX/UI ou dans l'audiovisuel. Passionné par le monde de la création et des nouvelles technologies, je suis constamment à la recherche de nouvelles façons de m’exprimer et de créer.
             Durant mon temps libre j’aime dessiner, faire de l’escalade et apprendre la guitare.</p>
     </div>
