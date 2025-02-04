@@ -35,7 +35,7 @@
 		<Experience
 		date="Août 2024 - Aujourd'hui"
 		IntitulePost="Webmaster">
-		<p>Secrétariat général pour l’administration du ministère de l’intérieur (SGAMI SO)</p>
+		<p>SECRÉTARIAT GÉNÉRAL POUR L'ADMINISTRATION DU MINISTÈRE DE L'INTÉRIEUR (SGAMI SO)</p>
 		<p>Finaliser le déploiement du nouvel intranet avec la nouvelle charte graphique de l’État</p>
     <p>Création vidéo et motion design</p>
     <p>Production des supports visuels (print et web)</p>
