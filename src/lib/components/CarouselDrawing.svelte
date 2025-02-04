@@ -14,6 +14,7 @@
 	<div class="miniCarousel">
 		<MiniCarousel
 		taille="5">
+    <img src="/dessin/Zendaya.jpg" alt="Dessin de Zendaya">
             <img class="carouselImage one" src="dessin/Nebula.jpg" alt="dessin">
             <img class="carouselImage two"src="/dessin/Max.jpg" alt="dessin">
             <img class="carouselImage thee"src="/dessin/femme_blonde.jpg" alt="dessin">
@@ -34,7 +35,7 @@
         text-decoration: underline;
         &:hover{
             text-decoration: underline;
-            
+
             color: $offWhite;
             p{
                 color: $offWhite;
@@ -54,7 +55,7 @@
 		width: 100%;
 		flex-direction: column;
 		z-index: 0;
-		
+
 	}
 	.contenaireCarousel{
 		width: 1800px;
@@ -70,7 +71,7 @@
 			width: 1500px;
 		}
 
-        
+
     }
 
     @media screen and (max-width: 1700px) {
@@ -116,7 +117,7 @@
 		section .miniCarousel{
 			display: block;
 		}
-		
+
     }
 
 
@@ -227,9 +228,9 @@
     }
     }
 
-    
-    
 
-	
+
+
+
 
 </style>

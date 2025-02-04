@@ -18,27 +18,27 @@
         centerImgContainer.style.transform = 'scale(135%)';
         centerImgContainer.style.zIndex = '90';
     }
-  
+
     function previous() {
         if (index > -1) {
             index -= 1;
         }
-  
+
         if (index < 0) {
             index = 4;
         }
         updateAccessory();
     }
-  
+
     function next() {
         if (index < 5) {
             index += 1;
         }
-  
+
         if (index > 4) {
             index = 0;
         }
-  
+
         updateAccessory();
     }
 
@@ -56,6 +56,9 @@
 
 <div class="carousel">
     <div class="carouselImage" bind:this={carouselImage}>
+        <div class="contenaireImg">
+            <img src="/dessin/Zendaya.jpg" alt="Dessin de Zendaya">
+        </div>
         <div class="contenaireImg">
             <img src="dessin/Nebula.jpg" alt="dessin">
         </div>
@@ -81,7 +84,7 @@
             <div class="point {i === index ? 'active' : ''}" on:click={() => goToIndex(i)}></div>
         {/each}
     </div>
-    
+
 </div>
 <style lang="scss">
     @import '../../styles/global.scss';
@@ -299,7 +302,7 @@
 
     .point:hover{
         transform: scale(1.5);
-        
+
     }
 
 
