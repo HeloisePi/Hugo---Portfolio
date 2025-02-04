@@ -7,31 +7,32 @@ import CarouselPageDessin from "$lib/components/utilities/CarouselPageDessin.sve
     <div class="contenaireStain">
         <img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
         <img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
-        <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
+        <img class="stain stain3" src="/stain/stain3.svg" alt="tâche">
     </div>
 <Hero
 title="DESSINS"
 scroll="#dessin">
 </Hero>
 <main id="dessin">
-<CarouselPageDessin 
+<CarouselPageDessin
 title="Portrait">
     <img src="/dessin/femme_blonde.jpg" alt="femme_blonde">
     <img src="/dessin/femme_profil.jpg" alt="femme_profil">
     <img src="/dessin/femme_face.jpg" alt="femme face">
 </CarouselPageDessin>
 
-<CarouselPageDessin 
+<CarouselPageDessin
 title="Personnage">
-    <img src="/dessin/Nebula.jpg" alt="Nebula">
-    <img src="/dessin/Wednesday.jpg" alt="Wednesday">
-    <img src="/dessin/Max.jpg" alt="Max">
-    <img src="/dessin/Scarlet_Witch.jpg" alt="Scarlet_Witch">
-    <img src="/dessin/Wanda.jpg" alt="Wanda">
+    <img src="/dessin/Zendaya.jpg" alt="Dessin de Zendaya">
+    <img src="/dessin/Nebula.jpg" alt="Dessin de Nebula">
+    <img src="/dessin/Wednesday.jpg" alt="Dessin de Wednesday">
+    <img src="/dessin/Max.jpg" alt="Dessin de Max">
+    <img src="/dessin/Scarlet_Witch.jpg" alt="Dessin de Scarlet_Witch">
+    <img src="/dessin/Wanda.jpg" alt="Dessin de Wanda">
 </CarouselPageDessin>
 
 
-<CarouselPageDessin 
+<CarouselPageDessin
 title="Abstrait">
     <img src="/dessin/femme_poignardee.jpg" alt="femme_poignardee">
     <img src="/dessin/oeil_ombre.jpg" alt="oeil_ombre">
@@ -40,7 +41,7 @@ title="Abstrait">
     <img src="/dessin/homme_seul.jpg" alt="homme_seul">
 </CarouselPageDessin>
 
-<CarouselPageDessin 
+<CarouselPageDessin
 title="Divers">
     <img src="/dessin/arbre.jpg" alt="arbre">
     <img src="/dessin/super_heros.jpg" alt="super_heros">
@@ -59,7 +60,7 @@ title="Divers">
     .stain1{
         left: 0;
         transform: translate(-50vw, 12vh);
-        animation: RotateStain1 10s linear infinite; 
+        animation: RotateStain1 10s linear infinite;
         width: 80%;
 
     }
@@ -67,7 +68,7 @@ title="Divers">
     .stain2{
         right: 0;
         transform: translate(32rem, -52vh);
-        animation: RotateStain2 15s linear infinite; 
+        animation: RotateStain2 15s linear infinite;
         width: 50%;
     }
 
@@ -147,7 +148,7 @@ title="Divers">
         main{
 			padding: 30px;
 		}
-		
+
     }
 
 	.contenaireStain{
