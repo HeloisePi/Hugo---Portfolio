@@ -1,9 +1,9 @@
 <script>
-	import Experience from "./utilities/Experience.svelte"; 
+	import Experience from "./utilities/Experience.svelte";
 </script>
 
 <h2 id="experience">EXPÉRIENCES</h2>
-<section class="contenaireExperience" > 
+<section class="contenaireExperience" >
 
 
     <!-- //////////////////////////////////////////////////////////// -->
@@ -12,13 +12,13 @@
 
 
 
-	<!-- <div class="opacityEffect">        
-		<Experience 
+	<!-- <div class="opacityEffect">
+		<Experience
 
 		date=     "DATE DE TON EXPERIENCE "                      // N'OUBLIE PAS LES ""
 		IntitulePost=     "EXEMPLE:TRÉSORIER"                    // N'OUBLIE PAS LES ""
-        >                  
-         
+        >
+
 		<p>ASSOCIATION BDE MMI</p>                          //ENSUITE TU MET DANS DES BALISES <p>  TOUT TES ÉLÉMENTS 1 PAR 1
 		<p>Gestion du budget de l’association</p>
 
@@ -31,21 +31,38 @@
     <!-- //////////////////////////////////////////////////////////// -->
 
 
-
-
-
+	<div class="opacityEffect">
+		<Experience
+		date="Août 2024 - Aujourd'hui"
+		IntitulePost="Webmaster">
+		<p>Secrétariat général pour l’administration du ministère de l’intérieur (SGAMI SO)</p>
+		<p>Finaliser le déploiement du nouvel intranet avec la nouvelle charte graphique de l’État</p>
+    <p>Création vidéo et motion design</p>
+    <p>Production des supports visuels (print et web)</p>
+		</Experience>
+	</div>
 
 	<div class="opacityEffect">
-		<Experience 
+		<Experience
+		date="Avril 2024 - Juillet 2024"
+		IntitulePost="UX/UI Designer">
+		<p>CERTEUROPE</p>
+		<p>Refonte du site internet</p>
+    <p>Création d’éléments graphiques</p>
+		</Experience>
+	</div>
+
+	<div class="opacityEffect">
+		<Experience
 		date="Mai 2023 - Mai 2024"
 		IntitulePost="TRÉSORIER">
 		<p>ASSOCIATION BDE MMI</p>
 		<p>Gestion du budget de l’association</p>
 		</Experience>
 	</div>
-	
+
 	<div class="opacityEffect">
-		<Experience 
+		<Experience
 		date="Mai 2023 - Juin 2023"
 		IntitulePost="CHARGÉ DE COMMUNICATION">
 		<p>VELO-CITE</p>
@@ -57,7 +74,7 @@
 	</div>
 
 	<div class="opacityEffect">
-		<Experience 
+		<Experience
 		date="Juillet 2021 - Août 2021"
 		IntitulePost="TÉLÉCONSEILLER">
 		<p>CPAM (CONTACT TRACING COVID)</p>
@@ -67,7 +84,7 @@
 		</Experience>
 	</div>
 	<div class="opacityEffect">
-		<Experience 
+		<Experience
 		date="Octobre 2020 - Juin 2021"
 		IntitulePost="EMPLOYÉ POLYVALENT">
 		<p>INTERMARCHE</p>
@@ -79,7 +96,7 @@
 	</div>
 
 	<div class="opacityEffect">
-		<Experience 
+		<Experience
 		date="Juin 2020 - Août 2020"
 		IntitulePost="GESTIONNAIRE ADMINISTRATIF">
 		<p>CERTEUROPE</p>
