@@ -22,7 +22,7 @@
 </a>
 
 <p class="thank">
-    Je tiens à vous remercier d'avoir pris le temps de parcourir mon portfolio et de découvrir mes réalisations en tant qu'étudiant en fin de deuxième année du BUT Métiers du Multimédia et de l'Internet. <br>
+    Je tiens à vous remercier d'avoir pris le temps de parcourir mon portfolio et de découvrir mes réalisations en tant qu'étudiant en trosième année du BUT Métiers du Multimédia et de l'Internet. <br>
 Enfin, merci à <span class="italic"><a href="https://heloisepingitore.fr" target="_blank">Héloïse PINGITORE</a></span>, d’avoir réalisé le développement de   <span class="italic"><a href="https://www.figma.com/file/Q3wSzofoeja8q9CkTTSSUZ/Portfolio?type=design&node-id=334-160&mode=design">mes maquettes Figma</a></span>  pour ce portfolio  ! N’hésitez pas à aller voir son portfolio juste  <span class="italic"><a href="https://heloisepingitore.fr" target="_blank">ici</a></span> .
 </p>
 
@@ -41,7 +41,7 @@ Enfin, merci à <span class="italic"><a href="https://heloisepingitore.fr" targe
         h2{
 			transform: translateX(-30px);
 		}
-		
+
     }
     #contact{
         margin-left: 110px;
@@ -80,12 +80,12 @@ Enfin, merci à <span class="italic"><a href="https://heloisepingitore.fr" targe
         padding-top: 9rem;
     }
 
-    a,p 
+    a,p
     {
         width: fit-content;
     }
 
-    
+
 
 
 </style>
