@@ -1,7 +1,7 @@
 <script></script>
 
 <footer>
-<p>© 2024 Hugo MENSAH - Tous droits réservés</p>
+<p>© 2025 Hugo MENSAH - Tous droits réservés</p>
 <a href="/mentions-legales#Mentions légales"><p>Mentions légales</p></a>
 </footer>
 
