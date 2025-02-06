@@ -2,7 +2,7 @@
 
     import Hero from '$lib/components/Hero.svelte';
     import MiniCarousel from '$lib/components/utilities/MiniCarousel.svelte';
-    import Projects from '$lib/components/utilities/Projects.svelte'; 
+    import Projects from '$lib/components/utilities/Projects.svelte';
     import { onMount, onDestroy } from 'svelte';
     import { writable, get } from 'svelte/store';
 
@@ -103,9 +103,9 @@
 <div class="contenaireStain">
     <img class="stain stain1" src="/stain/stain1.svg" alt="tâche">
     <img class="stain stain2" src="/stain/stain2.svg" alt="tâche">
-    <img class="stain stain3" src="/stain/stain3.svg" alt="tâche"> 
+    <img class="stain stain3" src="/stain/stain3.svg" alt="tâche">
 </div>
-<Hero 
+<Hero
 title="Projets"
 scroll="#project"></Hero>
 
@@ -114,7 +114,7 @@ scroll="#project"></Hero>
 <main id="project">
     <div class="contenairefilters">
 
-    
+
     <div class="filters" style="width: {get(filtersWidth)}px" on:click={toggleFiltersWidth}>
         <h3>Filtre :</h3>
         <img class="expand" src="/icon/expand_more.svg" alt="expand more">
@@ -136,7 +136,7 @@ scroll="#project"></Hero>
 
 
     <!-- <Projects
-    title1="titre de ton projet"      
+    title1="titre de ton projet"
     title2= "Sous titre de ton projet (nom que vous avez donné au projet)"
     link= "lien de ton project"
     linkTitle= "Intitulé du lien "
@@ -167,7 +167,31 @@ scroll="#project"></Hero>
     </MiniCarousel>
 
 </Projects> -->
-    
+
+<Projects
+title1="Workshop 2024"
+title2= "Dose ta dose"
+link= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle= "Lien prototype Figma"
+link= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle= "Lien prototype Figma"
+description= "Dose ta dose est un outil destiné aux infirmier·ère·s scolaires et enseignants pour sensibiliser les jeunes aux risques de l’alcool. Face à une consommation précoce et souvent influencée par l’entourage, ce kit pédagogique interactif propose des ressources adaptées pour mener des actions de prévention en collège et lycée.
+Conçu par un groupe de neuf étudiants en Métiers du Multimédia et de l’Internet à l’IUT Bordeaux Montaigne, ce projet répond à une problématique réelle, inédite et réalisable par des étudiants. Il a été développé lors d’un workshop de deux semaines."
+tag1= "DESIGN"
+tag1Color= "#0A12C2"
+tag2="ÉCRITURE"
+tag2Color= "#C20A0A"
+>
+<MiniCarousel
+taille="6">
+        <img class="carouselImage one" src="/project/PageProject/convivial/1.jpg" alt="">
+        <img class="carouselImage two" src="/project/PageProject/convivial/2.jpg" alt="">
+        <img class="carouselImage thee" src="/project/PageProject/convivial/3.jpg" alt="">
+        <img class="carouselImage four" src="/project/PageProject/convivial/4.jpg" alt="">
+        <img class="carouselImage five" src="/project/PageProject/convivial/5.jpg" alt="">
+        <img class="carouselImage six" src="/project/PageProject/convivial/6.jpg" alt="">
+</MiniCarousel>
+</Projects>
 
     <Projects
     title1="Conviviel"
@@ -175,9 +199,7 @@ scroll="#project"></Hero>
     link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
     linkTitle= "Lien Figma"
     description= "Au cours d'un projet de deux semaines sur l'UX/UI design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
-    tag1= "AUDIOVISUEL"
-    tag1Color= "#0A12C2"
-    tag2="DESIGN"
+    tag1="ÉCRITURE"
     tag2Color= "#C20ABA"
     >
     <MiniCarousel
@@ -292,14 +314,14 @@ scroll="#project"></Hero>
     tag1Color= "#C20ABA"
     tag2="DÉVELOPPEMENT"
     tag2Color= "#C25A0A"
-    
+
     >
     <MiniCarousel
     taille="3">
         <img class="carouselImage one" src="project/PageProject/ruby/1.jpg" alt="">
         <img class="carouselImage two" src="/project/PageProject/ruby/2.jpg" alt="">
         <img class="carouselImage thee" src="/project/PageProject/ruby/3.jpg" alt="">
-       
+
     </MiniCarousel>
     </Projects>
 
@@ -322,7 +344,7 @@ scroll="#project"></Hero>
         <img class="carouselImage two" src="/project/PageProject/blog/2.jpg" alt="">
         <img class="carouselImage thee" src="/project/PageProject/blog/3.jpg" alt="">
         <img class="carouselImage four" src="/project/PageProject/blog/4.jpg" alt="">
-       
+
     </MiniCarousel>
     </Projects>
 
@@ -355,7 +377,7 @@ scroll="#project"></Hero>
     linkTitle= "Regarder le livre"
     description= "Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations."
     tag1= "ÉCRITURE"
-    tag1Color= "#C20A0A" 
+    tag1Color= "#C20A0A"
     tag2="DESIGN"
     tag2Color= "#C20ABA"
     >
@@ -373,7 +395,7 @@ scroll="#project"></Hero>
     linkTitle= "Lien du site"
     description= "Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations."
     tag1= "ÉCRITURE"
-    tag1Color= "#C20A0A" 
+    tag1Color= "#C20A0A"
     >
     <MiniCarousel
     taille="4">
@@ -381,7 +403,7 @@ scroll="#project"></Hero>
         <img class="carouselImage two" src="/project/PageProject/bacchanight/2.jpg" alt="">
         <img class="carouselImage thee" src="/project/PageProject/bacchanight/3.jpg" alt="">
         <img class="carouselImage four" src="/project/PageProject/bacchanight/4.jpg" alt="">
-       
+
     </MiniCarousel>
     </Projects>
 
@@ -395,13 +417,13 @@ scroll="#project"></Hero>
     title2= " Infographies Darwin et Ammi"
     description= "Le projet consistait à créer deux infographies : une sur l'écosystème de Darwin à Bordeaux et une autre sur la start-up Briofood, active dans cet écosystème. Pour la première infographie, nous avons effectué des recherches approfondies sur Darwin, identifiant ses entreprises clées. La seconde infographie s'est concentrée sur Briofood, notamment sur leur produit Ammi et leur impact dans l’écosystème de Darwin. Ce projet nous a permis d’avoir un aperçu du monde des start-ups et de l'importance des écosystèmes locaux."
     tag1= "DESIGN"
-    tag1Color= "#C20ABA" 
+    tag1Color= "#C20ABA"
     >
     <MiniCarousel
     taille="2">
         <img class="carouselImage one" src="project/PageProject/infographie/1.jpg" alt="">
         <img class="carouselImage two" src="/project/PageProject/infographie/2.jpg" alt="">
-       
+
     </MiniCarousel>
     </Projects>
 
@@ -530,11 +552,11 @@ scroll="#project"></Hero>
 
     @media screen and (max-width: 1250px) {
         .filter{
-            
+
             flex-direction: column;
             gap: 20px;
             width: fit-content;
-            
+
         }
         .contenairefilters .filters{
             width: fit-content;
@@ -547,7 +569,7 @@ scroll="#project"></Hero>
                 position: absolute;
                 top: 21px;
             }
-           
+
         }
 
     }
@@ -556,9 +578,9 @@ scroll="#project"></Hero>
          .contenairefilters .filters{
             padding-top: 49px;
             padding-left: 0px;
-            
 
-        
+
+
             h3 {
                 top: 15px;
                 left: 15px ;
@@ -570,7 +592,7 @@ scroll="#project"></Hero>
             }
         }
 
-    
+
     }
 
     .contenairefilters{
@@ -598,7 +620,7 @@ scroll="#project"></Hero>
         padding-right: 50px;
 
         /* Animation appliquée à .filters */
-        
+
 }
 
 .filters .expand {
@@ -617,7 +639,7 @@ scroll="#project"></Hero>
 }
 
 /* Définition de l'animation */
-@keyframes filterOpen { 
+@keyframes filterOpen {
     0% {
         width: 116px;
     }
@@ -635,9 +657,9 @@ scroll="#project"></Hero>
     }
 
     75%{
-        
+
         width: 100px;
-    
+
     }
 
     100%{
@@ -665,7 +687,7 @@ scroll="#project"></Hero>
 
     }
     }
-    
+
 
 
 .tag {
@@ -703,7 +725,7 @@ scroll="#project"></Hero>
     .stain1{
         left: 0;
         transform: translate(-50vw, 12vh);
-        animation: RotateStain1 10s linear infinite; 
+        animation: RotateStain1 10s linear infinite;
         width: 80%;
 
     }
@@ -711,7 +733,7 @@ scroll="#project"></Hero>
     .stain2{
         right: 0;
         transform: translate(32rem, -52vh);
-        animation: RotateStain2 15s linear infinite; 
+        animation: RotateStain2 15s linear infinite;
         width: 50%;
     }
 
@@ -777,7 +799,7 @@ section{
         /* position: absolute; */
         /* top: 0; */
         /* height: 190vh; */
-        height: 100vh; 
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -807,7 +829,7 @@ section{
         main{
 			padding: 30px;
 		}
-		
+
     }
 
 	.contenaireStain{
@@ -832,7 +854,7 @@ section{
                 section .scroll{
                     width: 70px;
                     margin-top: 0px;
-                    
+
                 }
                 section .arrow{
                     width: 15px;
@@ -848,6 +870,6 @@ section{
                     margin-bottom: 40px;
                 }
             }
-    
+
 
 </style>
