@@ -3,6 +3,8 @@
     export let title2;
     export let link;
     export let linkTitle;
+    export let link2;
+    export let linkTitle2;
     export let description;
     export let tag1;
     export let tag1Color;
@@ -69,6 +71,12 @@
     {#if link==undefined }
     <a class="NotProject"href="#">Lien vers le projet                        </a>
     {/if }
+    {#if link2}
+    <a target="blank" class="link" href="{link2}"><p style="font-size: 20px;">{linkTitle2}</p></a>
+    {/if}
+    {#if link2==undefined }
+    <a class="NotProject"href="#">Lien vers le projet                        </a>
+    {/if }
 
 </div>
 
@@ -115,7 +123,7 @@
                 top: 10%;
                 left: 50%;
                 transform: translateX(-50%);
-                
+
             }
             p{
                 transform: translateY(-25%);
@@ -128,8 +136,8 @@
             .contenaire .contenaireProject .contenaireProject .link{
                 transform: translateY(-2rem) !important;
             }
-            
-            
+
+
         }
         .contenaire .cadre{
                 width: 125%;
@@ -140,7 +148,7 @@
     @media screen and (max-width: 1060px) {
         .contenaire {
             width: 80% ;
-            
+
             h2{
                 transform: translate(-13%, -4px);
             }
@@ -150,7 +158,7 @@
                 top: 10%;
                 left: 50%;
                 transform: translateX(-50%);
-                
+
             }
 
             .cadre1{
@@ -173,13 +181,13 @@
             .tag{
                 background-color: #1e092200;
                 padding: 0;
-                
+
                 p{
                     display: none;
                 }
                 .color{
                     margin: 0;
-                    
+
                 }
             }
         }
