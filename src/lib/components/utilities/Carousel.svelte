@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     let carouselImage;
     let index = 1;
-    const totalItems = 5; // Nombre total d'éléments dans le carousel
+    const totalItems = 6; // Nombre total d'éléments dans le carousel
 
     function updateAccessory() {
         const leftPosition = -100 * index;
@@ -20,27 +20,15 @@
     }
 
     function previous() {
-        if (index > -1) {
-            index -= 1;
-        }
-
-        if (index < 0) {
-            index = 4;
-        }
+        index = (index - 1 + totalItems) % totalItems;
         updateAccessory();
     }
 
     function next() {
-        if (index < 5) {
-            index += 1;
-        }
-
-        if (index > 4) {
-            index = 0;
-        }
-
+        index = (index + 1) % totalItems;
         updateAccessory();
     }
+
 
     function goToIndex(i) {
         index = i;
