@@ -169,6 +169,77 @@ scroll="#project"></Hero>
 </Projects> -->
 
 <Projects
+title1="NUIT AU MUSÉE"
+title2= "La réserve"
+link= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle= "Lien prototype Figma"
+link2= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle2= "Lien prototype Figma"
+description= "Nuit au Musée est un jeu narratif à fins multiples, réalisé en partenariat avec le Musée des Beaux-Arts de Bordeaux (Musba). Le joueur incarne un assistant du conservateur chargé de préparer une exposition en sélectionnant et disposant des œuvres issues des réserves du musée.
+Chaque choix impacte l’ambiance et l’environnement du musée, offrant une expérience immersive et personnalisée. Pour ce projet, j’ai réalisé l’ensemble des assets et des décors, contribuant à l’atmosphère de notre expérience. Vous pourrez bientôt tester notre expérience directement au Musba."
+tag1= "DESIGN"
+tag1Color= "#C20ABA"
+
+>
+<MiniCarousel
+taille="4">
+        <img class="carouselImage one" src="/project/PageProject/reserve/1.jpg" alt="">
+        <img class="carouselImage two" src="/project/PageProject/reserve/2.jpg" alt="">
+        <img class="carouselImage thee" src="/project/PageProject/reserve/3.jpg" alt="">
+        <img class="carouselImage four" src="/project/PageProject/reserve/4.jpg" alt="">
+
+</MiniCarousel>
+</Projects>
+
+
+<Projects
+title1="MÉDIA SPÉCIALISÉ"
+title2= "Flip"
+link= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle= "Lien prototype Figma"
+link2= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle2= "Lien prototype Figma"
+description= "Flip est une application interactive conçue pour aider les jeunes à s’informer sur la politique tout en luttant contre la désinformation. Grâce à des votes quotidiens, des sondages en direct et des débats entre amis, Flip pousse à la réflexion et encourage l’échange sur des sujets d’actualité. J’ai contribué à ce projet en participant à la création du design system et à la réalisation des maquettes, afin d’offrir une interface claire, engageante et accessible. Une approche moderne et ludique pour démêler l’info de l’intox et rendre le débat politique plus interactif."
+tag1= "DESIGN"
+tag1Color= "#C20ABA"
+tag2="ÉCRITURE"
+tag2Color= "#C20A0A"
+>
+<MiniCarousel
+taille="5">
+        <img class="carouselImage one" src="/project/PageProject/flip/1.jpg" alt="">
+        <img class="carouselImage two" src="/project/PageProject/flip/2.jpg" alt="">
+        <img class="carouselImage thee" src="/project/PageProject/flip/3.jpg" alt="">
+        <img class="carouselImage four" src="/project/PageProject/flip/4.jpg" alt="">
+        <img class="carouselImage five" src="/project/PageProject/flip/5.jpg" alt="">
+</MiniCarousel>
+</Projects>
+
+
+<Projects
+title1="JEU VIDÉO"
+title2= "Just a carot"
+link= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle= "Lien prototype Figma"
+link2= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle2= "Lien prototype Figma"
+description= "Just a Tarot est un jeu vidéo que nous avons développé, mêlant exploration et entraide. Le joueur incarne une carotte dotée de pouvoirs mystiques, chargée d’aider ses congénères à s’échapper des griffes d’un fermier utilisant des pesticides. Dans cet univers le joueur se déplace sur une map interactive, résolvant des défis pour sauver les autres carottes. Pour ce jeu, j’ai réalisé les assets et éléments de décors, contribuant à l’identité visuelle du jeu. Un projet, qui sensibilise de façon ludique aux dangers de l’abus des pesticides !"
+tag1= "DESIGN"
+tag1Color= "#C20ABA"
+
+>
+<MiniCarousel
+taille="4">
+        <img class="carouselImage one" src="/project/PageProject/justacarrot/1.jpg" alt="">
+        <img class="carouselImage two" src="/project/PageProject/justacarrot/2.jpg" alt="">
+        <img class="carouselImage thee" src="/project/PageProject/justacarrot/3.jpg" alt="">
+        <img class="carouselImage four" src="/project/PageProject/justacarrot/4.jpg" alt="">
+
+</MiniCarousel>
+</Projects>
+
+
+<Projects
 title1="Workshop 2024"
 title2= "Dose ta dose"
 link= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
@@ -178,20 +249,41 @@ linkTitle2= "Lien prototype Figma"
 description= "Dose ta dose est un outil destiné aux infirmier·ère·s scolaires et enseignants pour sensibiliser les jeunes aux risques de l’alcool. Face à une consommation précoce et souvent influencée par l’entourage, ce kit pédagogique interactif propose des ressources adaptées pour mener des actions de prévention en collège et lycée.
 Conçu par un groupe de neuf étudiants en Métiers du Multimédia et de l’Internet à l’IUT Bordeaux Montaigne, ce projet répond à une problématique réelle, inédite et réalisable par des étudiants. Il a été développé lors d’un workshop de deux semaines."
 tag1= "DESIGN"
-tag1Color= "#0A12C2"
+tag1Color= "#C20ABA"
+>
+<MiniCarousel
+taille="5">
+        <img class="carouselImage one" src="/project/PageProject/dosetadose/1.jpg" alt="">
+        <img class="carouselImage two" src="/project/PageProject/dosetadose/2.jpg" alt="">
+        <img class="carouselImage thee" src="/project/PageProject/dosetadose/3.png" alt="">
+        <img class="carouselImage four" src="/project/PageProject/dosetadose/4.png" alt="">
+        <img class="carouselImage five" src="/project/PageProject/dosetadose/5.png" alt="">
+</MiniCarousel>
+</Projects>
+
+<Projects
+title1="Stratégie e-commerce"
+title2= "La trabuc"
+link= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle= "Lien prototype Figma"
+link2= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
+linkTitle2= "Lien prototype Figma"
+description= "Dans le cadre de ce projet, nous avons repensé l’identité visuelle de La Trabuc, une marque de bière mettant en avant la convivialité. Avec mon groupe, nous avons choisi une direction colorée et dynamique, reflétant l’esprit festif et chaleureux de la marque. J’ai participé à la refonte de l’identité graphique ainsi qu’à la création de supports de communication, notamment des affiches, pour renforcer l’image moderne et engageante de La Trabuc. Un travail de design qui insuffle une nouvelle énergie à la marque !"
+tag1= "DESIGN"
+tag1Color= "#C20ABA"
 tag2="ÉCRITURE"
 tag2Color= "#C20A0A"
 >
 <MiniCarousel
-taille="6">
-        <img class="carouselImage one" src="/project/PageProject/convivial/1.jpg" alt="">
-        <img class="carouselImage two" src="/project/PageProject/convivial/2.jpg" alt="">
-        <img class="carouselImage thee" src="/project/PageProject/convivial/3.jpg" alt="">
-        <img class="carouselImage four" src="/project/PageProject/convivial/4.jpg" alt="">
-        <img class="carouselImage five" src="/project/PageProject/convivial/5.jpg" alt="">
-        <img class="carouselImage six" src="/project/PageProject/convivial/6.jpg" alt="">
+taille="4">
+        <img class="carouselImage one" src="/project/PageProject/trabuc/1.jpg" alt="">
+        <img class="carouselImage two" src="/project/PageProject/trabuc/2.png" alt="">
+        <img class="carouselImage thee" src="/project/PageProject/trabuc/3.jpg" alt="">
+        <img class="carouselImage four" src="/project/PageProject/trabuc/4.png" alt="">
+
 </MiniCarousel>
 </Projects>
+
 
     <Projects
     title1="Conviviel"
@@ -199,8 +291,8 @@ taille="6">
     link= "https://www.figma.com/file/Kb4mMIyTzWmDbMsrvZ8OLS/Refonte-Flop!Edt?type=design&node-id=199%3A2117&mode=design&t=WrcwC3MBNgDR1rRc-1"
     linkTitle= "Lien Figma"
     description= "Au cours d'un projet de deux semaines sur l'UX/UI design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
-    tag1="ÉCRITURE"
-    tag2Color= "#C20ABA"
+    tag1= "ÉCRITURE"
+    tag1Color= "#C20A0A"
     >
     <MiniCarousel
     taille="6">

@@ -65,18 +65,20 @@
             <p>{description}</p>
         </div>
     </div>
-    {#if link}
-    <a target="blank" class="link" href="{link}"><p style="font-size: 20px;">{linkTitle}</p></a>
-    {/if}
-    {#if link==undefined }
-    <a class="NotProject"href="#">Lien vers le projet                        </a>
-    {/if }
-    {#if link2}
-    <a target="blank" class="link" href="{link2}"><p style="font-size: 20px;">{linkTitle2}</p></a>
-    {/if}
-    {#if link2==undefined }
-    <a class="NotProject"href="#">Lien vers le projet                        </a>
-    {/if }
+    <div class="links">
+        {#if link}
+        <a target="blank" class="link" href="{link}"><p >{linkTitle}</p></a>
+        {/if}
+        {#if link==undefined }
+        <a class="NotProject"href="#">Lien vers le projet                        </a>
+        {/if }
+        {#if link2}
+        <a target="blank" class="link" href="{link2}"><p >{linkTitle2}</p></a>
+        {/if}
+        {#if link2==undefined }
+        <a class="NotProject"href="#">Lien vers le projet                        </a>
+        {/if }
+    </div>
 
 </div>
 
@@ -92,6 +94,13 @@
     a{
         z-index: 10;
     }
+
+    .links{
+                display: flex;
+                flex-direction: row;
+                gap: 52px;
+                transform: translatey(-0.3rem);
+            }
 
     .visuelElement{
         position: relative;
@@ -112,12 +121,20 @@
     }
 
     @media screen and (max-width: 1410px) {
+        .links{
+                transform: translatey(-1.8rem);
+            }
+
         .contenaire .contenaireProject{
             align-items: center;
             justify-items: center;
             grid-template-columns: 1fr;
             grid-template-rows: max-content 340px;
             gap: 1rem;
+
+
+            
+
             h3{
                 position: absolute;
                 top: 10%;
@@ -133,9 +150,8 @@
                 transform: translate(-93px, -4px);
             }
 
-            .contenaire .contenaireProject .contenaireProject .link{
-                transform: translateY(-2rem) !important;
-            }
+
+
 
 
         }
@@ -146,6 +162,10 @@
     }
 
     @media screen and (max-width: 1060px) {
+        .links{
+                transform: translatey(-2rem);
+            }
+
         .contenaire {
             width: 80% ;
 
@@ -170,14 +190,12 @@
             }
 
             a{
-                transform: translateY(-2rem);
                 z-index: 10;
             }
 
             .link{
                 font-size: 20px;
                }
-
             .tag{
                 background-color: #1e092200;
                 padding: 0;
@@ -193,10 +211,17 @@
         }
     }
     @media screen and (max-width: 550px) {
-        .contenaire{
-            a{
-                transform: translateY(-3rem);
+        .links{
+                transform: translatey(-3.1rem);
+                gap: 20px;
+                font-size: 18px;
             }
+        
+        
+
+
+        .contenaire{
+
             h2{
                 font-size: 20px;
                 margin-top: 20px;
