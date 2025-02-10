@@ -211,10 +211,6 @@ taille="5">
 <Projects
 title1="JEU VIDÉO"
 title2= "Just a carot"
-link= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
-linkTitle= "Lien prototype Figma"
-link2= "https://www.figma.com/proto/pJOuIEjK7zIq4xV3g1J1hV/Workshop---2024?node-id=0-1&t=mvPI3PAsODdLBo11-1"
-linkTitle2= "Lien prototype Figma"
 description= "Just a Tarot est un jeu vidéo que nous avons développé, mêlant exploration et entraide. Le joueur incarne une carotte dotée de pouvoirs mystiques, chargée d’aider ses congénères à s’échapper des griffes d’un fermier utilisant des pesticides. Dans cet univers le joueur se déplace sur une map interactive, résolvant des défis pour sauver les autres carottes. Pour ce jeu, j’ai réalisé les assets et éléments de décors, contribuant à l’identité visuelle du jeu. Un projet, qui sensibilise de façon ludique aux dangers de l’abus des pesticides !"
 tag1= "DESIGN"
 tag1Color= "#C20ABA"
